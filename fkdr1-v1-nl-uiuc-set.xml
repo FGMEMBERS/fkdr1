@@ -31,6 +31,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
  <sim>
 
   <description>Fokker Dr.1</description>
+  <author>Michael Selig</author>
   <status>production</status>
 
   <flight-model>larcsim</flight-model>
