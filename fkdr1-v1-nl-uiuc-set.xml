@@ -30,6 +30,9 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
  <sim>
 
+  <description>Fokker Dr.1</description>
+  <status>production</status>
+
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
   <aircraft-dir>Aircraft/UIUC/fkdr1-v1-nl</aircraft-dir>
