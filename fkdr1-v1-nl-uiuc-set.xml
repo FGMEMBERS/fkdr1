@@ -51,7 +51,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
   </panel_2>
 
   <model>
-   <path>Aircraft/fkdr1/Models/dr1.ac</path>
+   <path>Aircraft/fkdr1/Models/dr1.xml</path>
   </model>
 
   <view n="1">
