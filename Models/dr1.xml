@@ -12,6 +12,7 @@
   <type>spin</type>
   <object-name>power_plant</object-name>
   <property>/engines/engine[0]/rpm</property>
+  <factor>-1.0</factor>
   <center>
    <x-m>-0.88</x-m>
    <y-m>0.0</y-m>
