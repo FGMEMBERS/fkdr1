@@ -41,18 +41,30 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
   </sound>
 
-  <panel>
+  <panel_2>
    <path>Aircraft/c172/Panels/c172-vfr-panel.xml</path>
    <visibility>true</visibility>
-  </panel>
-
-  <panel_2>
-   <path>Aircraft/c172/Panels/c172-trans-mini-panel.xml</path>
   </panel_2>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+
+  <panel>
+   <path>Aircraft/c172/Panels/c172-trans-mini-panel.xml</path>
+   <visibility>true</visibility>
+  </panel>
 
   <model>
    <path>Aircraft/fkdr1/Models/dr1.xml</path>
   </model>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y">0.0</x-offset-m>
+    <z-offset-m archive="y">1.21</z-offset-m>
+    <y-offset-m archive="y">0.93</y-offset-m>
+   </config>
+  </view>
 
   <view n="1">
    <config>
