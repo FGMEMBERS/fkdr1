@@ -43,14 +43,14 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
   </sound>
 
   <panel_2>
-   <path>Aircraft/c172/Panels/c172-vfr-panel.xml</path>
+   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
    <visibility>true</visibility>
   </panel_2>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
 
   <panel>
-   <path>Aircraft/c172/Panels/c172-trans-mini-panel.xml</path>
+   <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
    <visibility>true</visibility>
   </panel>
 
