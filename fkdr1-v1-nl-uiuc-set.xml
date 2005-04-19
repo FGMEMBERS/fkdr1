@@ -73,5 +73,9 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    </config>
   </view>
 
+  <help>
+   <title>Fokker Dr.1</title>
+  </help>
+
  </sim>
 </PropertyList>
