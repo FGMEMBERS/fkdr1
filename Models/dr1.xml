@@ -97,9 +97,9 @@
   <name>leftMGgun</name>
   <path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
   <offsets>
-   <x-m>0.25</x-m>
-   <y-m>-0.20</y-m>
-   <z-m>0.12</z-m>
+   <x-m>0.535</x-m>
+   <y-m>-0.15</y-m>
+   <z-m>0.151</z-m>
   </offsets>
  </model>
 
@@ -107,9 +107,9 @@
   <name>rightMGgun</name>
   <path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
   <offsets>
-   <x-m>0.25</x-m>
-   <y-m>0.20</y-m>
-   <z-m>0.12</z-m>
+   <x-m>0.535</x-m>
+   <y-m>0.15</y-m>
+   <z-m>0.151</z-m>
   </offsets>
  </model>
 
