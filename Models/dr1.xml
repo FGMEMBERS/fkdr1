@@ -11,12 +11,13 @@
  <animation>
   <type>spin</type>
   <object-name>power_plant</object-name>
+  <object-name>propeller</object-name>
   <property>/engines/engine[0]/rpm</property>
   <factor>-1.0</factor>
   <center>
    <x-m>-0.88</x-m>
    <y-m>0.0</y-m>
-   <z-m>-0.41</z-m>
+   <z-m>-0.40</z-m>
   </center>
   <axis>
    <x>1.0</x>
@@ -110,6 +111,16 @@
    <x-m>0.535</x-m>
    <y-m>0.15</y-m>
    <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>benzin-uhr</name>
+  <path>Aircraft/fkdr1/Models/benzin.ac</path>
+  <offsets>
+   <x-m>0.04</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.145</z-m>
   </offsets>
  </model>
 
