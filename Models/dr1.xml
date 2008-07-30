@@ -129,8 +129,8 @@
   <path>Aircraft/fkdr1/Models/hohe.ac</path>
   <offsets>
    <x-m>0.9</x-m>
-   <y-m>0.28</y-m>
-   <z-m>-0.23</z-m>
+   <y-m>0.27</y-m>
+   <z-m>-0.15</z-m>
    <pitch-deg>-35</pitch-deg>
    <heading-deg>-45</heading-deg>
   </offsets>
