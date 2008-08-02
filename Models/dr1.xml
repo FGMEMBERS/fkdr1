@@ -8,6 +8,11 @@
   <z-m>0.5</z-m>
  </offsets>
 
+ <model>
+  <name>cockpit</name>
+  <path>Aircraft/fkdr1/Models/cockpit.xml</path>
+ </model>
+
  <animation>
   <type>spin</type>
   <object-name>power_plant</object-name>
@@ -111,28 +116,6 @@
    <x-m>0.535</x-m>
    <y-m>0.15</y-m>
    <z-m>0.149</z-m>
-  </offsets>
- </model>
-
- <model>
-  <name>benzin-uhr</name>
-  <path>Aircraft/fkdr1/Models/benzin.ac</path>
-  <offsets>
-   <x-m>0.04</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.145</z-m>
-  </offsets>
- </model>
-
- <model>
-  <name>hohe</name>
-  <path>Aircraft/fkdr1/Models/hohe.ac</path>
-  <offsets>
-   <x-m>0.9</x-m>
-   <y-m>0.27</y-m>
-   <z-m>-0.15</z-m>
-   <pitch-deg>-35</pitch-deg>
-   <heading-deg>-45</heading-deg>
   </offsets>
  </model>
 
