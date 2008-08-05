@@ -5,7 +5,7 @@
  <path>cockpit.ac</path>
 
  <model>
-  <name>benzin-uhr</name>
+  <name>fuel</name>
   <path>Aircraft/fkdr1/Models/benzin.xml</path>
   <offsets>
    <x-m>0.04</x-m>
@@ -15,18 +15,29 @@
  </model>
 
  <model>
-  <name>hohe</name>
+  <name>height</name>
   <path>Aircraft/fkdr1/Models/hohe.xml</path>
   <offsets>
    <x-m>0.83</x-m>
    <y-m>0.098</y-m>
-   <z-m>-0.088</z-m>
+   <z-m>-0.083</z-m>
    <pitch-deg>-10</pitch-deg>
   </offsets>
  </model>
 
  <model>
-  <name>uhr</name>
+  <name>rpm</name>
+  <path>Aircraft/fkdr1/Models/umlaufe.xml</path>
+  <offsets>
+   <x-m>0.83</x-m>
+   <y-m>-0.098</y-m>
+   <z-m>-0.083</z-m>
+   <pitch-deg>-10</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>watch</name>
   <path>Aircraft/fkdr1/Models/uhr.xml</path>
   <offsets>
    <x-m>0.83</x-m>
