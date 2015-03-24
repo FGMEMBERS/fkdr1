@@ -1,0 +1,208 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Aircraft:
+# Fokker DR-1
+#
+# File name:
+# fkdr1-v1-nl
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Authors:
+#
+# Michael Selig
+# http://www.uiuc.edu/~m-selig
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# For update history, see the file README.fkdr1.html
+# Last update 021123
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Specs:
+# Stall speed = "45 knots (NASA SP)"
+#               However, the footnote indicates that 45 knots is an estimate,
+#               Stall speed is actually 40 knots based on the GOE 298 airfoil using the tripe.
+# Max speed   = 100 knots w/ Clerget 9B 130 HP (115 mph)
+# Max rate of climb at sea level = 1200 fpm
+# Weight      = 1290 w/ half fuel in main tank
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# various "init" FGFS settings
+init use_V_rel_wind_2U    
+init use_dyn_on_speed_curve1    
+init dyn_on_speed  2    
+init dyn_on_speed_zero 1    
+init use_Alpha_dot_on_speed 7   # [ft/sec] speed below which Alpha_dot is set to zero    
+init use_gamma_horiz_on_speed 5 # [ft/sec] speed above which Gamma_horiz_deg is used in chase view [1]
+
+init downwashMode 100    
+init downwashCoef 0.034  # [1/ft] see Red Baron model notes 020901 p 1
+
+# geometry data
+geometry bw     23.58    # [ft]   [x] spreadsheet
+geometry cbar    8.52    # [ft]   [x] 020821 p. 0
+geometry Sw    200.9     # [ft^2] [x] spreadsheet
+
+# control deflections
+controlSurface de 14.6 17.9    # [deg]
+controlSurface da 17.35 17.35  # [deg]
+controlSurface dr 25 25        # [deg]
+
+mass Weight    1290      # [lb] [x]
+mass I_xx       368.55   # [slug-ft^2] [x]
+mass I_yy       522.24   # [slug-ft^2] [x]
+mass I_zz       731.37   # [slug-ft^2] [x]
+mass I_xz         0      # [slug-ft^2] [ ]
+
+# Apparent mass terms
+mass Mass_appMass_ratio  .068    # [x] apparent mass notes 020330 p 24
+mass I_xx_appMass_ratio  .138    # [x] apparent mass notes 020330 p 25
+mass I_yy_appMass_ratio  .031    # [x] apparent mass notes 020330 p 26
+
+engine simpleSingleModel 460 -3.35 263 # [lb] [fps]  [lb/fps]
+# where token3 - static thrust in [lb]
+#       token4 - speed at which thrust goes to zero [ft/sec]
+#       token5 - slope dT/dV at the speed at which thrust goes to zero [lb/fps]
+
+# turn on gyroscopic forces between pitch/yaw and engine rotation
+engine gyroForce_Q_body
+engine gyroForce_R_body
+engine omegaRPM 300 1200       # [rpm] {minOmegaRPM} {maxOmegaRPM}
+engine polarInertia 10.0232    # [slug-ft^2]
+
+engine slipstream_effects    
+engine propDia 9             # [ft]
+
+#engine eta_q_CL_adot 1
+#engine eta_q_CL_q    1
+engine eta_q_Cm_q     1    
+engine eta_q_Cm_adot  1    
+engine eta_q_Cmfade   1    
+#engine eta_q_Cl_beta 1
+#engine eta_q_Cl_p    1
+#engine eta_q_Cl_r    1
+engine eta_q_Cl_dr    1    
+engine eta_q_CY_beta  1    
+#engine eta_q_CY_p    1
+#engine eta_q_CY_r    1
+engine eta_q_CY_dr    1    
+engine eta_q_Cn_beta  1    
+engine eta_q_Cn_p     1    
+engine eta_q_Cn_r     1    
+engine eta_q_Cn_dr    1    
+
+
+# lift
+CL CLfa CLfa.dat 0 1     # [x] lift +-180 deg, see 020821-fokker-dr1 dir
+CL CL_adot  0.759        # [/rad] [x] LDM/S&C notes 020907 p 7
+CL CL_q     1.245        # [/rad] [x] LDM/S&C notes 020907 p 11
+
+# drag
+CD CDo      0.0323        # [x] aircraft parasite drag, NASA SP-468, 
+CD CDfa CDfa.dat 0 1 1    # [x] extra wing parasite drag +-180 deg, see 020821-fokker-dr1 dir
+CD CD_de 0.0136           # []
+CD CDK 0.0922             # [x] Cl^2 drag component, see notes Fokker Dr.1 notes 021019 p 6
+
+# pitching moment
+Cm Cmfa Cmfa.dat  0 1        # [x] moment +-180 deg, see 020821-fokker-dr1 dir, 
+Cm Cmfade Cmfade.dat  0 1 1  # [x] moment due to tail from +-180 deg, see 020821-fokker-dr1 dir
+Cm Cm_adot -1.122            # [/rad]  [x] LDM/S&C notes 020907 p 7
+Cm Cm_q    -1.839            # [/rad]  [x] LDM/S&C notes 020907 p 11
+
+# due to side slip
+CY CY_beta -0.3855       # [/rad] [x] Fokker Dr.1 notes 021019 p 2
+Cl Cl_beta -0.02         # [/rad] [] placeholder
+Cn Cn_beta  0.096        # [/rad] [x] Fokker Dr.1 notes 021019 p 2
+
+# due to aileron deflection
+#CY CY_da 0
+Cl Cl_da   -0.087        # [/rad] [x] S&C notes 020915 p 1
+Cn Cn_da    0.0552       # [/rad] [] adverse yaw placeholder, tuned for now
+                         #           This is a strong function of the elephant ears at the ends
+                         #           of the ailerons and three different types were used, so this
+                         #           value had large variation depending on the model.
+                         #           The larger the elephant ears, the better the aileron balance
+                         #           (and hence less "heavy" the feel), but the bigger ears
+                         #           resulted in more adverse yaw.  Pick your poison.
+
+# due to rudder deflection
+CY CY_dr    0.094        # [/rad] [x] Fokker Dr.1 notes 021019 p 3
+                         #            was S&C notes 020920 p 3 (0.0525)
+Cn Cn_dr   -0.0502       # [/rad] [x] Fokker Dr.1 notes 021019 p 3
+                         #            was S&C notes 020920 p 4
+Cl Cl_dr    0.005        # [/rad] [x] Fokker Dr.1 notes 021019 p 3
+                         #            was  020920 S&C notes, 020920 p.1-2
+
+# due to roll rate
+CY CY_p    -0.01         # [/rad] [x] Fokker Dr.1 notes 021019 p 4
+Cl Cl_p    -0.193        # [/rad] [x] S&C notes 020914 p 11 w/ 70% correction
+                         #            also from pilot report: "substantial opposite aileron is required to stop the roll"
+                         #            But this comment could be because the replica has Ixx too large.
+Cn Cn_p    -0.0109       # [/rad] [x] Fokker Dr.1 notes 021019 p 4
+
+# due to yaw rate
+CY CY_r     0.1047       # [/rad] [x] Fokker Dr.1 notes 021019 p 4
+Cl Cl_r     0.0458       # [/rad] [x] Fokker Dr.1 notes 021019 p 5
+Cn Cn_r    -0.082        # [/rad] [x] Fokker Dr.1 notes 021019 p 5
+                         #             was S&C notes 020920 p 5
+
+
+# nose wheel (must be position 0 if present)
+gear Dx_gear 0 25.5     # x-offset from CG [ft]
+gear Dy_gear 0 0        # y-offset from CG [ft]
+gear Dz_gear 0 -0.5     # z-offset from CG [ft]
+gear cgear 0  100       # damping [lbs/ft/sec]
+gear kgear 0  200       # springiness [lbs/ft]
+gear muGear 0 0.01      # rolling coefficient
+gear strutLength 0 -0.5 # gear travel [ft] (not yet used)
+
+
+# right gear (must be position 1 if present)
+gear Dx_gear 1  1.356    # [ft]
+gear Dy_gear 1 2.29      # [ft]
+gear Dz_gear 1 5.8       # [ft]
+gear cgear 1  500        # [lbs/ft/sec]
+gear kgear 1 1000        # [lbs/ft]
+gear muGear 1 0.01       # rolling coefficient
+gear strutLength 1 2.5   # [ft]
+
+# left gear (must be position 2 if present)
+gear Dx_gear 2  1.356    # [ft]
+gear Dy_gear 2 -2.29     # [ft]
+gear Dz_gear 2 5.8       # [ft]
+gear cgear 2  500        # [lbs/ft/sec]
+gear kgear 2 1000        # [lbs/ft]
+gear muGear 2 0.01       # rolling coefficient
+gear strutLength 2 2.5   # [ft]
+
+# tail dragger 
+gear Dx_gear 3 -12.79    # [ft]
+gear Dy_gear 3   0       # [ft]
+gear Dz_gear 3   2.5     # [ft]
+gear cgear 3  100        # [lbs/ft/sec]
+gear kgear 3  200        # [lbs/ft]
+gear muGear 3 0.05       # rolling coefficient
+gear strutLength 3 2.5   # [ft]
+
+# left wing tip
+gear Dx_gear 4  1.356    # [ft]
+gear Dy_gear 4 -12.0     # [ft]
+gear Dz_gear 4 2.2       # [ft]
+gear cgear   4  150      # [lbs/ft/sec]
+gear kgear   4  300      # [lbs/ft]
+gear muGear  4 0.01      # rolling coefficient
+gear strutLength 4 2.5   # [ft]
+
+# right wing tip
+gear Dx_gear 5  1.356    # [ft]
+gear Dy_gear 5 12.0      # [ft]
+gear Dz_gear 5 2.2       # [ft]
+gear cgear   5  150      # [lbs/ft/sec]
+gear kgear   5  300      # [lbs/ft]
+gear muGear  5 0.01      # rolling coefficient
+gear strutLength 5 2.5   # [ft]
+
+*
