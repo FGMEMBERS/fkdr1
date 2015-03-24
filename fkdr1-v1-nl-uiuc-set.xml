@@ -36,7 +36,6 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
-  <aircraft-dir>Aircraft/UIUC/fkdr1-v1-nl</aircraft-dir>
 
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
