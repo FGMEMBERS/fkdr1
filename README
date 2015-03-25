@@ -1,5 +1,5 @@
 
-FLightGear Fokker Dr.1 Triplane
+FlightGear Fokker Dr.1 Triplane
 ====================================
 This directory contains two variants of the Fokker Dr.1 Triplane:
 
@@ -13,7 +13,7 @@ This directory contains two variants of the Fokker Dr.1 Triplane:
 Both versions share the same 3d model and sounds.
 
 
-JSBSim flight dynamics relates files
+JSBSim flight dynamics related files
 ------------------------------------
 fkdr1-set.xml
 dr1.xml
@@ -21,7 +21,7 @@ Engines/Oberursel-UrII.xml
 Engines/Dr1_propeller.xml
 Models/dr1-jsb.xml
 
-UIUC flight dynamics relates files
+UIUC flight dynamics related files
 ------------------------------------
 fkdr1-v1-nl-uiuc-set.xml
 aircraft.dat
