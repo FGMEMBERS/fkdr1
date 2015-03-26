@@ -322,10 +322,6 @@
  <aerodynamics>
 
   <axis name="LIFT">
-    <!--
-       CLadot:	0.759 (/rad)
-       CLq:	1.245 (/rad)
-     -->
 
     <function name="aero/coefficient/CLalpha">
       <description>Lift_due_to_alpha</description>
@@ -449,15 +445,35 @@
        </product>
     </function>
 
+    <function name="aero/coefficient/CLadot">
+       <description>Delta_Lift_due_to_alpha_rate</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>aero/alphadot-rad_sec</property>
+           <property>aero/ci2vel</property>
+           <value>0.759</value>
+       </product>
+    </function>
+
+    <function name="aero/coefficient/CLq">
+       <description>Lift_due_to_pitch_rate</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>velocities/q-aero-rad_sec</property>
+           <property>aero/ci2vel</property>
+           <value>1.245</value>
+       </product>
+    </function>
+
   </axis>
 
   <axis name="DRAG">
     <!--
-       CDo:	0.0323	[x]
-       CDde:	0.0136	[x]
        CDK:	0.0922
      -->
-    <function name="aero/coefficient/CD0">
+    <function name="aero/coefficient/CDo">
        <description>Drag_at_zero_lift</description>
        <product>
           <property>aero/qbar-psf</property>
@@ -583,21 +599,24 @@
   </axis>
 
   <axis name="SIDE">
-    <!--
-       CYbeta:	-0.3855 (/rad)	[x]
-       CYda:	0
-       CYdr:	0.094 (/rad)	[x]
-       CYp:	-0.01 (/rad)	[x]
-       CYr:	0.1047 (/rad)	[x]
-     -->
 
-    <function name="aero/coefficient/CYb">
+    <function name="aero/coefficient/CYbeta">
        <description>Side_force_due_to_beta</description>
        <product>
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/beta-rad</property>
            <value>-0.3855</value>
+       </product>
+    </function>
+
+    <function name="aero/coefficient/CYda">
+       <description>Side_force_due_to_aileron</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/left-aileron-pos-rad</property>
+           <value>0.0000</value>
        </product>
     </function>
 
@@ -636,15 +655,8 @@
   </axis>
 
   <axis name="ROLL">
-    <!--
-       Clbeta:	-0.02 (/rad)	[x]
-       Clda:	-0.087 (/rad)	[x]
-       Cldr:	0.005 (/rad)	[x]
-       Clp:	-0.193 (/rad)	[x]
-       Clr:	0.0458 (/rad)	[x]
-    -->
 
-    <function name="aero/coefficient/Clb">
+    <function name="aero/coefficient/Clbeta">
        <description>Roll_moment_due_to_beta</description>
        <product>
            <property>aero/qbar-psf</property>
@@ -675,7 +687,7 @@
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
-           <value>0.458</value>
+           <value>-0.0458</value>
        </product>
     </function>
 
@@ -697,17 +709,13 @@
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>0.005</value>
+           <value>-0.005</value>
        </product>
     </function>
 
   </axis>
 
   <axis name="PITCH">
-    <!--
-       Cmadot:	-1.122 (/rad)	[x]
-       Cmq:	-1.839 (/rad)	[x]
-    -->
 
     <function name="aero/coefficient/Cmalpha">
        <description>Pitch_moment_due_to_alpha</description>
@@ -900,15 +908,8 @@
   </axis>
 
   <axis name="YAW">
-    <!--
-       Cnbeta:	0.096 (/rad)	[x]
-       Cnda:	0.0552 (/rad)	[x]
-       Cndr:	-0.0502 (/rad)	[x]
-       Cnp:	-0.0109 (/rad)	[x]
-       Cnr:	-0.082 (/rad)	[x]
-     -->
 
-    <function name="aero/coefficient/Cnb">
+    <function name="aero/coefficient/Cnbeta">
        <description>Yaw_moment_due_to_beta</description>
        <product>
            <property>aero/qbar-psf</property>
