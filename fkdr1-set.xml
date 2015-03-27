@@ -50,11 +50,14 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
   <panel>
    <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
-   <visibility>true</visibility>
+   <visibility>false</visibility>
   </panel>
 
   <model>
    <path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
+   <livery>
+    <file type="string"/>
+   </livery>
   </model>
 
   <rendering>
@@ -76,5 +79,29 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    <title>Fokker Dr.1</title>
   </help>
 
+  <menubar>
+   <default>
+    <menu n="100">
+     <label>Fokker Dr.1</label>
+     <enabled type="bool">true</enabled>
+     <item>
+      <label>Select Livery</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+        aircraft.livery.dialog.toggle();
+       </script>
+      </binding>
+     </item>
+    </menu>
+   </default>
+  </menubar>
  </sim>
+
+ <nasal>
+  <fkdr1>
+   <file>Aircraft/fkdr1/Nasal/liveries.nas</file>
+  </fkdr1>
+ </nasal>
+
 </PropertyList>
