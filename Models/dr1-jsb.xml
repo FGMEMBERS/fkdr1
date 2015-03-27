@@ -8,10 +8,25 @@
   <z-m>0.5</z-m>
  </offsets>
 
+ <nasal>
+  <load>
+   var livery_update = aircraft.livery_update.new(
+        "Aircraft/fkdr1/Models/Liveries", 10);
+  </load>
+  <unload>
+   livery_update.stop();
+  </unload>
+ </nasal>
+
  <model>
   <name>cockpit</name>
   <path>Aircraft/fkdr1/Models/cockpit.xml</path>
  </model>
+
+ <effect>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/cylinder-normal</inherits-from>
+  <object-name>cylinders</object-name>
+ </effect>
 
  <animation>
   <type>spin</type>
@@ -118,5 +133,16 @@
    <z-m>0.149</z-m>
   </offsets>
  </model>
+
+ <!-- livery selection -->
+ <animation>
+  <type>material</type>
+   <object-name>propeller</object-name>
+   <object-name>fuselage</object-name>
+   <object-name>wings</object-name>
+   <property-base>sim/model/livery</property-base>
+   <texture-prop>texture</texture-prop>
+   <texture>dr1.rgb</texture>
+ </animation>
 
 </PropertyList>

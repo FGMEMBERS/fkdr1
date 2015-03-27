@@ -50,7 +50,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
   <panel>
    <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
-   <visibility>true</visibility>
+   <visibility>false</visibility>
   </panel>
 
   <model>
@@ -76,6 +76,11 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
   <help>
    <title>Fokker Dr.1</title>
   </help>
-
  </sim>
+
+ <nasal>
+  <fkdr1>
+   <file>Aircraft/fkdr1/Nasal/liveries.nas</file>
+  </fkdr1>
+ </nasal>
 </PropertyList>
