@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>benzin.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>zeiger</object-name>
+  <property>/sim/model/fkdr1/fuel</property>
+  <factor>1</factor>
+  <offset-deg>0</offset-deg>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

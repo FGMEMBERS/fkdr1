@@ -20,7 +20,7 @@
 
  <model>
   <name>cockpit</name>
-  <path>Aircraft/fkdr1/Models/cockpit.xml</path>
+  <path>Aircraft/fkdr1/Models/Cockpit/cockpit.xml</path>
  </model>
 
  <effect>

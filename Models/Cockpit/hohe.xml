@@ -11,7 +11,7 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>needle</object-name>
+  <object-name>zeiger</object-name>
   <property>systems/static/pressure-inhg</property>
   <factor>18.7</factor>
   <offset-deg>-176</offset-deg>
