@@ -6,7 +6,7 @@
 
  <model>
   <name>fuel</name>
-  <path>Aircraft/fkdr1/Models/benzin.xml</path>
+  <path>Aircraft/fkdr1/Models/Cockpit/benzin.xml</path>
   <offsets>
    <x-m>0.04</x-m>
    <y-m>0.0</y-m>
@@ -16,7 +16,7 @@
 
  <model>
   <name>height</name>
-  <path>Aircraft/fkdr1/Models/hohe.xml</path>
+  <path>Aircraft/fkdr1/Models/Cockpit/hohe.xml</path>
   <offsets>
    <x-m>0.83</x-m>
    <y-m>0.098</y-m>
@@ -27,7 +27,7 @@
 
  <model>
   <name>rpm</name>
-  <path>Aircraft/fkdr1/Models/umlaufe.xml</path>
+  <path>Aircraft/fkdr1/Models/Cockpit/umlaufe.xml</path>
   <offsets>
    <x-m>0.83</x-m>
    <y-m>-0.098</y-m>
@@ -38,7 +38,7 @@
 
  <model>
   <name>watch</name>
-  <path>Aircraft/fkdr1/Models/uhr.xml</path>
+  <path>Aircraft/fkdr1/Models/Cockpit/uhr.xml</path>
   <offsets>
    <x-m>0.83</x-m>
    <y-m>0.18</y-m>

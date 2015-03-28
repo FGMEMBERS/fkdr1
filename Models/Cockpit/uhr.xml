@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>uhr.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>minutenzeiger</object-name>
+  <property>/instrumentation/clock/indicated-min</property>
+  <factor>-6</factor>
+  <offset-deg>0</offset-deg>
+  <max-deg>360</max-deg>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>uhrzeiger</object-name>
+  <property>sim/model/fkdr1/clock/hour</property>
+  <factor>-30</factor>
+  <offset-deg>-180</offset-deg>
+  <max-deg>360</max-deg>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

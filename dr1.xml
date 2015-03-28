@@ -185,7 +185,7 @@
        <y>   0.00 </y>
        <z>  -5.68 </z>
      </location>
-     <capacity unit="LBS"> 100.00 </capacity>
+     <capacity unit="LBS"> 125.00 </capacity>
      <contents unit="LBS">  50.00 </contents>
   </tank>
 
