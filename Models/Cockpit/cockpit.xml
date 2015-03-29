@@ -18,10 +18,12 @@
   <name>height</name>
   <path>Aircraft/fkdr1/Models/Cockpit/hohe.xml</path>
   <offsets>
-   <x-m>0.83</x-m>
-   <y-m>0.098</y-m>
-   <z-m>-0.083</z-m>
-   <pitch-deg>-10</pitch-deg>
+   <x-m>0.85</x-m>
+   <y-m>0.253</y-m>
+   <z-m>-0.115</z-m>
+   <pitch-deg>-12</pitch-deg>
+   <heading-deg>-47.5</heading-deg>
+   <roll-deg>0.0</roll-deg>
   </offsets>
  </model>
 
@@ -29,10 +31,10 @@
   <name>rpm</name>
   <path>Aircraft/fkdr1/Models/Cockpit/umlaufe.xml</path>
   <offsets>
-   <x-m>0.83</x-m>
-   <y-m>-0.098</y-m>
-   <z-m>-0.083</z-m>
-   <pitch-deg>-10</pitch-deg>
+   <x-m>0.775</x-m>
+   <y-m>-0.028</y-m>
+   <z-m>-0.215</z-m>
+   <pitch-deg>-20</pitch-deg>
   </offsets>
  </model>
 
@@ -41,10 +43,10 @@
   <path>Aircraft/fkdr1/Models/Cockpit/uhr.xml</path>
   <offsets>
    <x-m>0.83</x-m>
-   <y-m>0.18</y-m>
-   <z-m>-0.055</z-m>
-   <pitch-deg>-10</pitch-deg>
-   <heading-deg>-15</heading-deg>
+   <y-m>0.19</y-m>
+   <z-m>-0.018</z-m>
+   <pitch-deg>-20</pitch-deg>
+   <heading-deg>-10</heading-deg>
   </offsets>
  </model>
 
