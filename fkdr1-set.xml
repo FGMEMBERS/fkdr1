@@ -26,7 +26,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 ************************************************************************
 -->
 
-<PropertyList>
+<PropertyList include="fkdr1-shared-set.xml">
 
  <sim>
 
@@ -37,22 +37,6 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
   <flight-model>jsb</flight-model>
   <aero>dr1</aero>
 
-  <sound>
-   <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
-  </sound>
-
-  <panel_2>
-   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
-   <visibility>true</visibility>
-  </panel_2>
-
-  <virtual-cockpit archive="y">true</virtual-cockpit>
-
-  <panel>
-   <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
-   <visibility>false</visibility>
-  </panel>
-
   <model>
    <path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
    <livery>
@@ -60,97 +44,6 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    </livery>
   </model>
 
-  <rendering>
-   <camera-group>
-    <znear>0.15</znear>
-   </camera-group>
-  </rendering>
-
-  <view n="0">
-   <internal archive="y">true</internal>
-   <config>
-    <x-offset-m archive="y">0.0</x-offset-m>
-    <z-offset-m archive="y">1.20</z-offset-m>
-    <y-offset-m archive="y">0.75</y-offset-m>
-   </config>
-  </view>
-
-  <help>
-   <title>Fokker Dr.1</title>
-  </help>
-
-  <menubar>
-   <default>
-    <menu n="100">
-     <label>Fokker Dr.1</label>
-     <enabled type="bool">true</enabled>
-     <item>
-      <label>Select Livery</label>
-      <binding>
-       <command>nasal</command>
-       <script>
-        aircraft.livery.dialog.toggle();
-       </script>
-      </binding>
-     </item>
-    </menu>
-   </default>
-  </menubar>
-
-  <help>
-  </help>
  </sim>
-
- <input>
-  <keyboard>
-   <key n="360">
-    <name>PageUp</name>
-    <desc>Increase throttle (blip)</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.incThrottle(1.0, 1.0)
-     </script>
-    </binding>
-    <mod-shift>
-     <desc>Look front right</desc>
-     <binding>
-      <command>property-assign</command>
-      <property>/sim/current-view/goal-heading-offset-deg</property>
-      <property>/sim/view/config/front-right-direction-deg</property>
-     </binding>
-    </mod-shift>
-   </key>
-
-   <key n="361">
-    <name>PageDown</name>
-    <desc>Decrease throttle (blip)</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.incThrottle(-1.0, -1.0)
-     </script>
-    </binding>
-    <mod-shift>
-     <desc>Look back right</desc>
-     <binding>
-      <command>property-assign</command>
-      <property>/sim/current-view/goal-heading-offset-deg</property>
-      <property>/sim/view/config/back-right-direction-deg</property>
-     </binding>
-    </mod-shift>
-   </key>
-  </keyboard>
- </input>
-
-
- <nasal>
-  <fkdr1>
-   <file>Aircraft/fkdr1/Nasal/liveries.nas</file>
-   <file>Aircraft/fkdr1/Nasal/systems.nas</file>
-  </fkdr1>
- </nasal>
 
 </PropertyList>

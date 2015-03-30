@@ -30,13 +30,6 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
  <sim>
 
-  <description>Fokker Dr.1 (UIUC)</description>
-  <author>Michael Selig (FDM), Erik Hofman (3D model)</author>
-  <status>production</status>
-
-  <flight-model>larcsim</flight-model>
-  <aero>uiuc</aero>
-
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
   </sound>
@@ -53,9 +46,11 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    <visibility>false</visibility>
   </panel>
 
-  <model>
-   <path>Aircraft/fkdr1/Models/dr1.xml</path>
-  </model>
+  <rendering>
+   <camera-group>
+    <znear>0.15</znear>
+   </camera-group>
+  </rendering>
 
   <view n="0">
    <internal archive="y">true</internal>
@@ -67,20 +62,70 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    </config>
   </view>
 
+<!--
   <view n="1">
    <config>
     <eye-heading-deg-path>/orientation/gamma-horiz-deg</eye-heading-deg-path>
    </config>
   </view>
+-->
+
+  <menubar>
+   <default>
+    <menu n="100">
+     <label>Fokker Dr.1</label>
+     <enabled type="bool">true</enabled>
+     <item>
+      <label>Select Livery</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+        aircraft.livery.dialog.toggle();
+       </script>
+      </binding>
+     </item>
+    </menu>
+   </default>
+  </menubar>
 
   <help>
    <title>Fokker Dr.1</title>
   </help>
  </sim>
 
+ <input>
+  <keyboard>
+   <key n="360">
+    <name>PageUp</name>
+    <desc>Increase throttle (blip)</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       controls.incThrottle(1.0, 1.0)
+     </script>
+    </binding>
+   </key>
+
+   <key n="361">
+    <name>PageDown</name>
+    <desc>Decrease throttle (blip)</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       controls.incThrottle(-1.0, -1.0)
+     </script>
+    </binding>
+   </key>
+  </keyboard>
+ </input>
+
  <nasal>
   <fkdr1>
    <file>Aircraft/fkdr1/Nasal/liveries.nas</file>
+   <file>Aircraft/fkdr1/Nasal/systems.nas</file>
   </fkdr1>
  </nasal>
+
 </PropertyList>
