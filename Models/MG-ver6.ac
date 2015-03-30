@@ -16280,7 +16280,7 @@ refs 3
 0 1 0
 kids 0
 OBJECT poly
-name "box"
+name "gunpad"
 loc 0.588384 0.0876907 0.209724
 texture "Cockpit/leather.rgb"
 crease 90.000000

@@ -7,6 +7,12 @@
     <name type="string">Red Baron</name>
     <texture>Liveries/RedBaron/dr1.rgb</texture>
    </livery>
+   <livery-leather>
+    <texture>Liveries/RedBaron/leather.rgb</texture>
+   </livery-leather>
+   <livery-logo>
+    <texture>Liveries/RedBaron/dr1trans.rgb</texture>
+   </livery-logo>
   </model>
  </sim>
 </PropertyList>
