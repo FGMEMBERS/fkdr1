@@ -149,8 +149,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
  <nasal>
   <fkdr1>
    <file>Aircraft/fkdr1/Nasal/liveries.nas</file>
-   <file>Aircraft/fkdr1/Nasal/fuel.nas</file>
-   <file>Aircraft/fkdr1/Nasal/clock.nas</file>
+   <file>Aircraft/fkdr1/Nasal/systems.nas</file>
   </fkdr1>
  </nasal>
 

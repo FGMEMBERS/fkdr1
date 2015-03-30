@@ -12,7 +12,7 @@
  <animation>
   <type>rotate</type>
   <object-name>zeiger</object-name>
-  <property>systems/static/pressure-inhg</property>
+  <property>/sim/model/fkdr1/pressure-inhg-adj</property>
   <factor>18.7</factor>
   <offset-deg>-176</offset-deg>
 <!--
@@ -24,6 +24,20 @@
    <y>0.0</y>
    <z>0.0</z>
   </axis>
+ </animation>
+
+ <animation>
+  <type>knob</type>
+  <object-name>knopf</object-name>
+  <value>0.0</value>
+ 
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>/sim/model/fkdr1/pressure-offset</property>
+    <factor>0.1</factor>
+   </binding>
+  </action>
  </animation>
 
 </PropertyList>
