@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>kompass.ac</path>
+
+ <animation>
+  <name>roll</name>
+  <type>rotate</type>
+  <object-name>disk</object-name>
+  <object-name>ring</object-name>
+  <object-name>kompass</object-name>
+  <property>instrumentation/attitude-indicator/indicated-roll-deg</property>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <name>pitch</name>
+  <type>rotate</type>
+  <object-name>disk</object-name>
+  <object-name>kompass</object-name>
+  <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <name>heading</name>
+  <type>rotate</type>
+  <object-name>disk</object-name>
+  <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
