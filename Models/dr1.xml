@@ -13,9 +13,9 @@
   <property>/surface-positions/flight/right-aileron-pos-norm</property>
   <factor>-17.35</factor>
   <center>
-   <x-m>0.18</x-m>
-   <y-m>-2.185</y-m>
-   <z-m>0.86</z-m>
+   <x-m>0.42</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.92</z-m>
   </center>
   <axis>
    <x>0.0</x>
@@ -30,9 +30,9 @@
   <property>/surface-positions/flight/right-aileron-pos-norm</property>
   <factor>17.35</factor>
   <center>
-   <x-m>0.18</x-m>
-   <y-m>2.185</y-m>
-   <z-m>0.86</z-m>
+   <x-m>0.42</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.92</z-m>
   </center>
   <axis>
    <x>0.0</x>
