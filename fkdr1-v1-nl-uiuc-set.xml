@@ -33,6 +33,12 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
   <description>Fokker Dr.1 (UIUC)</description>
   <author>Michael Selig (FDM), Erik Hofman (3D model)</author>
   <status>production</status>
+  <rating>
+    <FDM type="int">5</FDM>
+    <systems type="int">1</systems>
+    <cockpit type="int">4</cockpit>
+    <model type="int">5</model>
+  </rating>
 
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
