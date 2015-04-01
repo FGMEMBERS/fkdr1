@@ -15,10 +15,6 @@
   <property>/sim/model/fkdr1/pressure-inhg-adj</property>
   <factor>18.7</factor>
   <offset-deg>-176</offset-deg>
-<!--
-  <min-deg>-180</min-deg>
-  <max-deg>180</max-deg>
--->
   <axis>
    <x>1.0</x>
    <y>0.0</y>
@@ -29,13 +25,14 @@
  <animation>
   <type>knob</type>
   <object-name>knopf</object-name>
+  <drag-direction>vertical</drag-direction>
   <value>0.0</value>
  
   <action>
    <binding>
     <command>property-adjust</command>
     <property>/sim/model/fkdr1/pressure-offset</property>
-    <factor>0.1</factor>
+    <factor>-0.1</factor>
    </binding>
   </action>
  </animation>
