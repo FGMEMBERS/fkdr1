@@ -1,6 +1,6 @@
 
 var ACUITY = 1/60;
-var run_systems = func {
+var timer = maketimer(0.1, func {
 
    # clock
    var hours = getprop("/instrumentation/clock/local-hour") or 0;
@@ -21,8 +21,9 @@ var run_systems = func {
    var pressure = getprop("/systems/static/pressure-inhg") or 0;
    var presure_init = getprop("/sim/model/fkdr1/pressure-offset") or 0;
    setprop("/sim/model/fkdr1/pressure-inhg-adj", pressure + presure_init);
+   }
+);
 
-   settimer( func {run_systems() },0.1);
-}
+# start the timer
+timer.start();
 
-run_systems();

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>entzundung.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>knopf</object-name>
+  <property>controls/engines/engine/magnetos</property>
+  <factor>60</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>knob</type>
+  <object-name>knopf</object-name>
+  <value>0.0</value>
+ 
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>controls/engines/engine/magnetos</property>
+    <factor>1</factor>
+   </binding>
+  </action>
+ </animation>
+
+</PropertyList>

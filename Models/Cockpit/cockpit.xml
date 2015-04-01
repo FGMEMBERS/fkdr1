@@ -5,6 +5,16 @@
  <path>cockpit.ac</path>
 
  <model>
+  <name>magnetos</name>
+  <path>Aircraft/fkdr1/Models/Cockpit/entzundung.xml</path>
+  <offsets>
+   <x-m>1.05</x-m>
+   <y-m>-0.144</y-m>
+   <z-m>-0.0455</z-m>
+  </offsets>
+ </model>
+
+ <model>
   <name>fuel</name>
   <path>Aircraft/fkdr1/Models/Cockpit/benzin.xml</path>
   <offsets>
@@ -65,7 +75,7 @@
   <type>rotate</type>
   <object-name>throttle</object-name>
   <object-name>throttlePusher</object-name>
-  <property>controls/engines/engine[1]/throttle</property>
+  <property>controls/engines/engine/throttle</property>
   <factor>-65</factor>
   <center>
    <x-m>0.92</x-m>
@@ -78,11 +88,23 @@
    <z>0.0</z>
   </axis>
  </animation>
+ <animation>
+  <type>knob</type>
+  <object-name>throttle</object-name>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>controls/engines/engine/throttle</property>
+    <factor>1</factor>
+   </binding>
+  </action>
+ </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>throttlePusher</object-name>
-  <property>controls/engines/engine[1]/throttle</property>
+  <property>controls/engines/engine/throttle</property>
   <factor>65</factor>
   <center>
    <x-m>0.89</x-m>
