@@ -20,10 +20,10 @@
   <offsets>
    <x-m>0.85</x-m>
    <y-m>0.253</y-m>
-   <z-m>-0.115</z-m>
+   <z-m>-0.095</z-m>
    <pitch-deg>-12</pitch-deg>
    <heading-deg>-47.5</heading-deg>
-   <roll-deg>0.0</roll-deg>
+   <roll-deg>14.0</roll-deg>
   </offsets>
  </model>
 
