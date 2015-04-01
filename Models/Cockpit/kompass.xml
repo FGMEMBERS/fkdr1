@@ -10,7 +10,7 @@
   <object-name>disk</object-name>
   <object-name>ring</object-name>
   <object-name>kompass</object-name>
-  <property>instrumentation/attitude-indicator/indicated-roll-deg</property>
+  <property>orientation/roll-deg</property>
   <axis>
    <x>0.0</x>
    <y>1.0</y>
@@ -23,7 +23,7 @@
   <type>rotate</type>
   <object-name>disk</object-name>
   <object-name>kompass</object-name>
-  <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
+  <property>orientation/pitch-deg</property>
   <axis>
    <x>1.0</x>
    <y>0.0</y>
