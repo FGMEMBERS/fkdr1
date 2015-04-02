@@ -7,7 +7,7 @@
  <animation>
   <type>rotate</type>
   <object-name>zeiger</object-name>
-  <property>/sim/model/fkdr1/fuel</property>
+  <property>sim/model/fkdr1/fuel</property>
   <factor>1</factor>
   <offset-deg>0</offset-deg>
   <axis>

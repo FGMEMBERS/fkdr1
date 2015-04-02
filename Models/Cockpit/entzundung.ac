@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "cylinder"
 loc 0.462305 0.942731 -0.0221062
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 14
 -0.441096 -0.932932 0.145186
@@ -3999,7 +3999,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.883944 0.576343 -0.0220479
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 14
 0.861678 -0.570791 0.148106
