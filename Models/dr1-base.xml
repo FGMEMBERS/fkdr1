@@ -5,7 +5,7 @@
  <path>dr1.ac</path>
 
  <offsets>
-  <z-m>0.5</z-m>
+  <z-m>0.25</z-m>
  </offsets>
 
  <nasal>
@@ -17,6 +17,11 @@
    livery_update.stop();
   </unload>
  </nasal>
+
+ <model>
+  <name>Chocks</name>
+  <path>Aircraft/fkdr1/Models/chocks.xml</path>
+ </model>
 
  <model>
   <name>cockpit</name>
@@ -52,7 +57,7 @@
   <type>spin</type>
   <object-name>power_plant</object-name>
   <object-name>propeller</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <factor>-1.0</factor>
   <center>
    <x-m>-0.88</x-m>
@@ -69,7 +74,7 @@
   <type>spin</type>
   <object-name>propeller_disk</object-name>
   <object-name>engine_disk</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <factor>-0.08</factor>
   <center>
    <x-m>-0.88</x-m>

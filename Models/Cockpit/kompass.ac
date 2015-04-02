@@ -8,7 +8,7 @@ kids 5
 OBJECT poly
 name "stand"
 loc -0.0328756 -0.040643 1.70547e-05
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 90.000000
 numvert 148
 -0.0331528 -0.0180612 -0.0212916
@@ -1174,7 +1174,7 @@ kids 0
 OBJECT poly
 name "ring"
 loc -1.10147e-05 -2.89459e-05 -3.0224e-05
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 90.000000
 numvert 248
 -0.0498974 -0.00249419 -0.0102093
@@ -3206,7 +3206,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 9.03179e-06 -0.000912684 4.39751e-06
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/dr1.rgb"
+texture "../dr1.rgb"
 crease 90.000000
 numvert 33
 -0.0367538 0 0
@@ -3439,7 +3439,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 2.36855e-05 -7.55908e-06 -0.000334574
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 90.000000
 numvert 60
 0.00272099 0.002858 0.0568182
@@ -3775,7 +3775,7 @@ kids 0
 OBJECT poly
 name "kompass"
 loc -8.19564e-07 -0.024005 -2.01166e-07
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/dr1.rgb"
+texture "../dr1.rgb"
 crease 90.000000
 numvert 641
 0.0449444 0.00553884 -0.00889672

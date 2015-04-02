@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--CHOCKS -->
+<animation>
+ <type>select</type>
+ <object-name>chocks</object-name>
+ <condition>
+  <property>controls/gear/brake-parking</property>
+ </condition>
+</animation>
+ 
+<!-- MAIN LEFT CHOCKS -->
+<model>
+ <name>chocks</name>
+ <path>Aircraft/fkdr1/Models/chock.ac</path>
+ <offsets> 
+  <x-m>-0.45</x-m>
+  <y-m>-0.75</y-m>
+  <z-m>-1.99</z-m>
+  <heading-deg>90</heading-deg>
+ </offsets>
+</model>
+ 
+<model>
+ <name>chocks</name>
+ <path>Aircraft/fkdr1/Models/chock.ac</path>
+ <offsets> 
+  <x-m>-0.45</x-m>
+  <y-m> 0.80</y-m>
+  <z-m>-1.99</z-m>
+  <heading-deg>90</heading-deg>
+ </offsets>
+</model>
+ 
+<!-- MAIN RIGHT CHOCKS -->
+<model>
+ <name>chocks</name>
+ <path>Aircraft/fkdr1/Models/chock.ac</path>
+ <offsets> 
+  <x-m> 0.10</x-m>
+  <y-m>-0.77</y-m>
+  <z-m>-1.85</z-m>
+  <heading-deg>-90</heading-deg>
+ </offsets>
+</model>
+ 
+<model>
+ <name>chocks</name>
+ <path>Aircraft/fkdr1/Models/chock.ac</path>
+ <offsets> 
+  <x-m> 0.10</x-m>
+  <y-m> 0.79</y-m>
+  <z-m>-1.85</z-m>
+  <heading-deg>-90</heading-deg>
+ </offsets>
+</model>
+
+</PropertyList>

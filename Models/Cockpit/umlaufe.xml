@@ -7,10 +7,7 @@
  <animation>
   <type>rotate</type>
   <object-name>zeiger</object-name>
-  <property>/engines/engine[0]/rpm</property>
-<!--
-  <factor>-0.2175</factor>
--->
+  <property>engines/engine[0]/rpm</property>
   <factor>-0.33</factor>
   <offset-deg>142</offset-deg>
   <max-deg>0</max-deg>

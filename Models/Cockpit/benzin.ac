@@ -7,7 +7,7 @@ kids 3
 OBJECT poly
 name "disk"
 loc -0.00204681 2.21237e-05 0.000180601
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/dr1.rgb"
+texture "../dr1.rgb"
 texrep -1 1
 crease 45.000000
 numvert 33

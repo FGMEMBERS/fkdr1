@@ -48,6 +48,12 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    <livery>
     <file type="string"/>
    </livery>
+   <pushback>
+    <kp type="double">100</kp>
+    <ki type="double">25</ki>
+    <kd type="double">0</kd>
+    <position-norm type="double">0</position-norm>
+   </pushback>
   </model>
 
  </sim>

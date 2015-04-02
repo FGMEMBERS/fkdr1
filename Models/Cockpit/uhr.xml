@@ -7,7 +7,7 @@
  <animation>
   <type>rotate</type>
   <object-name>minutenzeiger</object-name>
-  <property>/instrumentation/clock/indicated-min</property>
+  <property>instrumentation/clock/indicated-min</property>
   <factor>-6</factor>
   <offset-deg>0</offset-deg>
   <max-deg>360</max-deg>

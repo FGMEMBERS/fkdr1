@@ -24,7 +24,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.905874 -0.118663 1.01193
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 42
 -0.145186 -0.102402 -1.02686
@@ -615,7 +615,7 @@ kids 15
 OBJECT poly
 name "cylinder"
 loc 0.00602502 0.0588223 0.0465975
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/rivet.rgb"
+texture "../rivet.rgb"
 crease 90.000000
 numvert 17
 0.00353557 0.00353558 -0.00321972
@@ -744,7 +744,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.00602502 0.0148203 0.0462427
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/rivet.rgb"
+texture "../rivet.rgb"
 crease 90.000000
 numvert 17
 0 0 -0.00356185
@@ -873,7 +873,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.0188664 0.0586984 -0.130657
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/rivet.rgb"
+texture "../rivet.rgb"
 crease 90.000000
 numvert 17
 0.00356185 0 0
@@ -1002,7 +1002,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.0188664 0.0148203 -0.130871
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/rivet.rgb"
+texture "../rivet.rgb"
 crease 90.000000
 numvert 17
 0.00321972 0.00353558 0.00353556
@@ -1131,7 +1131,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.0259958 -0.0347231 0.178776
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 42
 0.0245704 -0.000186265 -0.145186
@@ -1415,7 +1415,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.0190758 -0.0588731 0.178776
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 42
 0.0265495 0.0034848 -0.164581
@@ -29057,7 +29057,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.823013 -0.0243934 -0.000650063
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/bolt-M8.rgb"
+texture "../bolt-M8.rgb"
 crease 80.000000
 numvert 112
 0.0242893 7.62623e-05 -0.145186

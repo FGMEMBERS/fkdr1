@@ -151,6 +151,21 @@
 
  </ground_reactions>
 
+ <external_reactions>
+  <force name="pushback" frame="BODY">
+   <location unit="IN">
+    <x>-8.5</x>
+    <y> 0</y>
+    <z>-69.60</z>
+   </location>
+   <direction>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+   </direction>
+  </force>
+ </external_reactions>
+
  <propulsion>
 
    <engine file="Oberursel-UrII">
@@ -190,6 +205,9 @@
   </tank>
 
  </propulsion>
+
+ <system file="pushback"/>
+ <!-- <system file="chocks"/> -->
 
  <flight_control name="FCS: Fokker Dr.1">
 
