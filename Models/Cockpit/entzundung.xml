@@ -8,7 +8,7 @@
   <type>rotate</type>
   <object-name>knopf</object-name>
   <property>controls/engines/engine/magnetos</property>
-  <factor>60</factor>
+  <factor>30</factor>
   <axis>
    <x>0.0</x>
    <y>1.0</y>

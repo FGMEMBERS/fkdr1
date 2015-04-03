@@ -15,14 +15,24 @@
    <desc>magneto ON</desc>
   </key>
   <key>
+   <name>Shift+B</name>
+   <desc>add/remove chocks</desc>
+  </key>
+<!--
+  <key>
    <name>e</name>
    <desc>fire guns </desc>
   </key>
+-->
+  <line>Pre Flight</line>
+  <line> </line>
+  <line> Make sue to set the altimeter to zero before flight. </line>
+  <line> Remove the chocks with Shift+B </line>
   <line> </line>
   <line>Starting</line>
   <line> </line>
   <line>To start, press '}' to turn the magneto on. Engage full throttle. Then press and </line>
-  <line>hold 's' until the engine catches--it may take several seconds.</line> 
+  <line>hold 's' until the engine catches -- it may take several seconds.</line> 
   <line> </line>
   <line>Take Off</line>
   <line> </line>
@@ -45,6 +55,7 @@
   <line>Similarly, be prepared to ease off the rudder and aileron as the aircraft </line>
   <line>picks up speed.</line>
     <line> </line>
+<!--
   <line>Guns</line>
   <line> </line>
   <line>Guns have 250 rounds each, the maximum capacity of the Spandau lMG08 that was</line>
@@ -53,7 +64,7 @@
    <line>Note that guns will not work if AI models are disabled (the bullets</line> 
     <line>and smoke are AI objects - tracer rounds will appear but they won't move).</line>
     <line>Fire with the e key or a joystick trigger linked to /controls/armament/trigger. </line>
-    <line>Reload guns: Use the menu--you must be on ground and stopped. </line>
-    
+    <line>Reload guns: Use the menu \-\- you must be on ground and stopped. </line>
+    -->
  </help>
 </PropertyList>

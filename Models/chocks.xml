@@ -7,7 +7,11 @@
  <type>select</type>
  <object-name>chocks</object-name>
  <condition>
-  <property>controls/gear/brake-parking</property>
+  <and>
+   <property>controls/gear/brake-parking</property>
+   <property>gear/gear[0]/wow</property>
+   <property>gear/gear[1]/wow</property>
+  </and>
  </condition>
 </animation>
  
