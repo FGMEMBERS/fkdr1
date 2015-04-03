@@ -120,6 +120,41 @@
 
  <animation>
   <type>rotate</type>
+  <object-name>column</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>-10</factor>
+  <center>
+   <x-m>0.86</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.6</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>column</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-12</factor>
+  <center>
+   <x-m>0.86</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.6</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<!--
+ <animation>
+  <type>rotate</type>
   <object-name>steerColom</object-name>
   <object-name>yokeHinge</object-name>
   <object-name>yokeGrip</object-name>
@@ -171,6 +206,7 @@
    <z>0.0</z>
   </axis>
  </animation>
+-->
 
  <animation>
   <type>rotate</type>
