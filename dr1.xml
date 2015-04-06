@@ -67,7 +67,7 @@
    <ixx unit="SLUG*FT2">    368.55 </ixx>
    <iyy unit="SLUG*FT2">    522.24 </iyy>
    <izz unit="SLUG*FT2">    731.37 </izz>
-   <emptywt unit="LBS" >       775 </emptywt>
+   <emptywt unit="LBS" >       895 </emptywt>
    <location name="CG" unit="IN">
      <x>   0.00 </x>
      <y>   0.00 </y>
@@ -79,9 +79,9 @@
 
   <contact type="BOGEY" name="LEFT_MAIN">
    <location unit="IN">
-     <x>  -8.5 </x>
-     <y> -30.59 </y>
-     <z> -69.60 </z>
+     <x>  -8.66 </x>
+     <y> -30.32 </y>
+     <z> -76.77 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -91,13 +91,13 @@
    <max_steer unit="DEG">0</max_steer>
    <brake_group>NONE</brake_group>
    <retractable>0</retractable>
- </contact>
+  </contact>
 
   <contact type="BOGEY" name="RIGHT_MAIN">
    <location unit="IN">
-     <x>  -8.5 </x>
-     <y>  30.59 </y>
-     <z> -69.60 </z>
+     <x>  -8.66 </x>
+     <y>  30.32 </y>
+     <z> -76.77 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -107,13 +107,13 @@
    <max_steer unit="DEG">0</max_steer>
    <brake_group>NONE</brake_group>
    <retractable>0</retractable>
- </contact>
+  </contact>
 
-  <contact type="BOGEY" name="TAIL">
+  <contact type="BOGEY" name="TAIL_SKID">
    <location unit="IN">
-     <x> 157.48 </x>
+     <x> 162.20 </x>
      <y>   0.00 </y>
-     <z> -26.85 </z>
+     <z> -26.77 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -123,40 +123,80 @@
    <max_steer unit="DEG"> 0.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>0</retractable>
- </contact>
+  </contact>
 
-  <contact type="STRUCTURE" name="LEFT_WING">
+  <contact type="STRUCTURE" name="TAIL">
+   <location unit="IN">
+     <x> 173.23 </x>
+     <y>   0.00 </y>
+     <z>  -9.45 </z>
+   </location>
+   <static_friction>  0.80 </static_friction>
+   <dynamic_friction> 0.50 </dynamic_friction>
+   <rolling_friction> 0.02 </rolling_friction>
+   <spring_coeff unit="LBS/FT">       200 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC">  100 </damping_coeff>
+   <max_steer unit="DEG"> 0.00 </max_steer>
+   <brake_group>NONE</brake_group>
+   <retractable>0</retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT_UPPER_WING">
     <location unit="IN">
-     <x>   22.4 </x>
-     <y> -108.8 </y>
-     <z>  -34.8 </z>
+     <x>    0.0 </x>
+     <y> -133.9 </y>
+     <z>  -35.8 </z>
     </location>
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
     <spring_coeff unit="LBS/FT">        300 </spring_coeff>
     <damping_coeff unit="LBS/FT/SEC">   150 </damping_coeff>
- </contact>
+  </contact>
 
-  <contact type="STRUCTURE" name="RIGHT_WING">
+  <contact type="STRUCTURE" name="RIGHT_UPPER_WING">
     <location unit="IN">
-     <x>   22.4 </x>
-     <y>  108.8 </y>
-     <z>  -34.8 </z>
+     <x>    0.0 </x>
+     <y>  133.9 </y>
+     <z>  -35.8 </z>
     </location>
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
     <spring_coeff unit="LBS/FT">        300 </spring_coeff>
     <damping_coeff unit="LBS/FT/SEC">   150 </damping_coeff>
- </contact>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT_LOWER_WING">
+    <location unit="IN">
+     <x>   -8.7 </x>
+     <y> -112.2 </y>
+     <z>  -33.5 </z>
+    </location>
+    <static_friction>  0.80 </static_friction>
+    <dynamic_friction> 0.50 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">        300 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">   150 </damping_coeff>
+  </contact>
+
+  <contact type="STRUCTURE" name="RIGHT_LOWER_WING">
+    <location unit="IN">
+     <x>   -8.7 </x>
+     <y>  112.2 </y>
+     <z>  -33.5 </z>
+    </location>
+    <static_friction>  0.80 </static_friction>
+    <dynamic_friction> 0.50 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">        300 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">   150 </damping_coeff>
+  </contact>
 
  </ground_reactions>
 
  <external_reactions>
   <force name="pushback" frame="BODY">
    <location unit="IN">
-    <x>-8.5</x>
-    <y> 0</y>
-    <z>-69.60</z>
+     <x> 173.23 </x>
+     <y>   0.00 </y>
+     <z>  -9.45 </z>
    </location>
    <direction>
     <x>1</x>
@@ -170,9 +210,9 @@
 
    <engine file="Oberursel-UrII">
     <location unit="IN">
-      <x> -25.00 </x>
+      <x> -18.90 </x>
       <y>   0.00 </y>
-      <z>   0.00 </z>
+      <z> -16.14 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -196,9 +236,9 @@
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x>   0.04 </x>
+       <x>  -5.91 </x>
        <y>   0.00 </y>
-       <z>  -5.68 </z>
+       <z>  -7.09 </z>
      </location>
      <capacity unit="LBS"> 125.00 </capacity>
      <contents unit="LBS">  50.00 </contents>
@@ -214,7 +254,7 @@
   <channel name="Pitch">
    <summer name="Pitch Trim Sum">
       <input>fcs/elevator-cmd-norm</input>
-      <input>fcs/pitch-trim-cmd-norm</input>
+<!--  <input>fcs/pitch-trim-cmd-norm</input> -->
       <clipto>
         <min> -1 </min>
         <max>  1 </max>
@@ -248,7 +288,7 @@
   <channel name="Roll">
    <summer name="Roll Trim Sum">
       <input>fcs/aileron-cmd-norm</input>
-      <input>fcs/roll-trim-cmd-norm</input>
+<!--  <input>fcs/roll-trim-cmd-norm</input> -->
       <clipto>
         <min> -1 </min>
         <max>  1 </max>
@@ -304,7 +344,7 @@
   <channel name="Yaw">
    <summer name="Rudder Command Sum">
       <input>fcs/rudder-cmd-norm</input>
-      <input>fcs/yaw-trim-cmd-norm</input>
+<!--  <input>fcs/yaw-trim-cmd-norm</input> -->
       <clipto>
         <min> -0.35 </min>
         <max>  0.35 </max>

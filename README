@@ -15,19 +15,61 @@ Both versions share the same 3d model and sounds.
 
 JSBSim flight dynamics related files
 ------------------------------------
-fkdr1-set.xml
+fkdr1-set.xml (includes fkdr1-shared-set.xml)
 dr1.xml
 Engines/Oberursel-UrII.xml
 Engines/Dr1_propeller.xml
-Models/dr1-jsb.xml
+Systems/chocks.xml
+Systems/pushback.xml
+Models/dr1-jsb.xml (includes Models/dr1-base.xml)
 
 UIUC flight dynamics related files
 ------------------------------------
-fkdr1-v1-nl-uiuc-set.xml
+fkdr1-v1-nl-uiuc-set.xml (includes fkdr1-shared-set.xml)
 aircraft.dat
 Cmfade.dat
 CDfa.dat
 CLfa.dat
 Cmfa.dat
 README.fkdr1-uiuc.html
-Models/dr1.xml
+Models/dr1.xml (includes Models/dr1-base.xml)
+
+
+ 
+The " Throttles" for the DrI
+====================================
+From: http://www.theaerodrome.com/forum/showthread.php?t=478020
+
+On the Left side of the cockpit :- There is the rod with a little loop on the
+end ....This is the connection to the fuel tank Fuel Tap , and is open / closed
+(Aft position ) .
+
+Also in this place , is a toothed " Quadrant " and a lever with a long wooden
+handle .
+This is connected to a rod , which operates the " Fine Adjustement Control
+Valve " , for fuel flowing from the petrol tank Tap , to the main jet on the
+Bloctube Carburettor , ( As would the "Tampier" control on the N17) , in order
+to optimise the mixture to compensate for changes in altitude .(Low hight
+requires more fuel to air ,where the air is more dense ....High Altitude ,
+thinner air , needs less fuel .) .
+
+
+On the Control Column .:- Here is the "Blip switch " , for use at low engine
+speed ,when the throttle is closed , such as in landing & taxing, or as needed
+in combat .
+
+Also on the control column ...The Left Hand Grip is a Bowden lever , and this
+operates directly , via 2 Bowden cables , the sprung loaded lever of the
+Air-Slide (and fuel Needlevalve/main jet ) of the Bloctube Carburettor .....
+This can be called the Main throttle .
+
+
+On the Right side of the cockpit ,:-..Should either of the above mentioned
+Bowden cables break , then the Air slide lever is sprung loaded to open fully .
+This is the fail safe ) .
+In order to offer some "Throttle " control ,.... There is , on the right side ,
+a " T " handle and rod , which connects through a bellcrank to a sliding joint
+rod , to the Bloctube throttle slide lever ....This may be used in order to
+"Close" the throttle by any amount , as required .
+( This T handle is often mistakenly thought to operate the Oil Tap )
+
