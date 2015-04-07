@@ -75,7 +75,7 @@
   <type>rotate</type>
   <object-name>throttle</object-name>
   <object-name>throttlePusher</object-name>
-  <property>controls/engines/engine/throttle</property>
+  <property>controls/engines/engine/mixture</property>
   <factor>-65</factor>
   <center>
    <x-m>0.92</x-m>
@@ -95,8 +95,8 @@
   <action>
    <binding>
     <command>property-adjust</command>
-    <property>controls/engines/engine/throttle</property>
-    <factor>1</factor>
+    <property>controls/engines/engine/mixture</property>
+    <factor>0.1</factor>
    </binding>
   </action>
  </animation>
@@ -104,18 +104,44 @@
  <animation>
   <type>rotate</type>
   <object-name>throttlePusher</object-name>
-  <property>controls/engines/engine/throttle</property>
+  <property>controls/engines/engine/mixture</property>
   <factor>65</factor>
   <center>
-   <x-m>0.89</x-m>
+   <x-m>0.87</x-m>
    <y-m>0</y-m>
-   <z-m>-0.28</z-m>
+   <z-m>-0.3</z-m>
   </center>
   <axis>
    <x>0.0</x>
    <y>1.0</y>
    <z>0.0</z>
   </axis>
+ </animation>
+
+
+ <animation>
+  <type>translate</type>
+  <object-name>fuel_tap</object-name>
+  <property>controls/engines/engine/fuel-pump</property>
+  <offset-m>-0.01</offset-m>
+  <factor>-0.015</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>knob</type>
+  <object-name>fuel_tap</object-name>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>controls/engines/engine/fuel-pump</property>
+    <factor>1</factor>
+   </binding>
+  </action>
  </animation>
 
  <animation>

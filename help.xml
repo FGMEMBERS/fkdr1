@@ -15,6 +15,10 @@
    <desc>magneto ON</desc>
   </key>
   <key>
+   <name>b</name>
+   <desc>blip for 0.75 seconds</desc>
+  </key>
+  <key>
    <name>Shift+B</name>
    <desc>add/remove chocks</desc>
   </key>
@@ -27,6 +31,7 @@
   <line>Pre Flight</line>
   <line> </line>
   <line> Make sue to set the altimeter to zero before flight. </line>
+  <line> Open the Fuel-Tap</line>
   <line> Remove the chocks with Shift+B </line>
   <line> </line>
   <line>Starting</line>
