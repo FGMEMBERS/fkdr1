@@ -183,9 +183,9 @@
 
   <contact type="STRUCTURE" name="LEFT_LOWER_WING">
     <location unit="IN">
-     <x>   -8.7 </x>
-     <y> -112.2 </y>
-     <z>  -33.5 </z>
+     <x>  -39.4 </x>
+     <y> -106.2 </y>
+     <z>  -40.2 </z>
     </location>
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
@@ -195,9 +195,9 @@
 
   <contact type="STRUCTURE" name="RIGHT_LOWER_WING">
     <location unit="IN">
-     <x>   -8.7 </x>
-     <y>  112.2 </y>
-     <z>  -33.5 </z>
+     <x>  -39.4 </x>
+     <y>  106.2 </y>
+     <z>  -40.2 </z>
     </location>
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
