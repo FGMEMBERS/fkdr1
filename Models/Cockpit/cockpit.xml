@@ -71,6 +71,17 @@
   </offsets>
  </model>
 
+ <model>
+  <name>spedometer</name>
+  <path>Aircraft/fkdr1/Models/Cockpit/geschwindigkeit.xml</path>
+  <offsets>
+   <x-m>0.10</x-m>
+   <y-m>-2.43</y-m>
+   <z-m>0.3</z-m>
+   <heading-deg>60</heading-deg>
+  </offsets>
+ </model>
+
  <animation>
   <type>rotate</type>
   <object-name>throttle</object-name>

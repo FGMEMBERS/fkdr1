@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>geschwindigkeit.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>zeiger</object-name>
+  <property>velocities/airspeed-kt</property>
+  <factor>-3.030303</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>wind</object-name>
+  <property>velocities/airspeed-kt</property>
+  <factor>-1.852</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
