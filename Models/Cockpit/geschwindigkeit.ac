@@ -3286,7 +3286,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.106454 -0.0110119 0.00169914
-texture "/home/fgfs/flightgear-fgaddon/Aircraft/fkdr1/Models/dr1.rgb"
+texture "../dr1.rgb"
 crease 90.000000
 numvert 61
 0.147999 0.0114631 -0.0612878
