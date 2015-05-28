@@ -13,7 +13,7 @@
        static thrust (lbs): 340
 -->
 
-<propeller name="prop">
+<propeller version="1.0" name="prop">
   <ixx> 14.7913 </ixx>         <!-- aeromatic: 4.7681, selig engine: 10.0232 -->
   <diameter unit="IN">102.0 </diameter>
   <numblades> 2 </numblades>
