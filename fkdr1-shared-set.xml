@@ -5,10 +5,10 @@ Fokker Dr.1 (triplane) simulation config.  This file ties together all
 the components used by FGFS to represent the flight data model,
 instrument panel, and external model.
 
-Flight model details: 
+Flight model details:
 Aircraft/UIUC/fkdr1-v1-nl/README.fkdr1.html
 
-External model details:  
+External model details:
 - Currently no GNU GPL version exists.
 - To obtain an external model, separately download the file
   fokdr1m2.zip from http://www.flightsim.com.  There are several
@@ -29,6 +29,8 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 <PropertyList>
 
  <sim include="help.xml">
+   <!-- don't make a variant for this file -->
+   <exclude type="bool">true</exclude>
 
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
