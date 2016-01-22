@@ -30,7 +30,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
  <sim include="help.xml">
    <!-- don't make a variant for this file -->
-   <exclude type="bool">true</exclude>
+   <exclude-from-catalog type="bool">true</exclude-from-catalog>
 
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
