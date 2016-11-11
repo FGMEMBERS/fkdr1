@@ -17,15 +17,25 @@
 -->
 
 <piston_engine name="Oberursel Ur.II">
-  <minmp unit="INHG">          6.0 </minmp>	<!-- Deprecated -->
-  <maxmp unit="INHG">         29.0 </maxmp>
-  <displacement unit="IN3"> 995.00 </displacement>
-  <maxhp>        110.00 </maxhp>		
-  <!--bsfc>           0.45 </bsfc-->
-  <cycles>         4.0 </cycles>
-  <idlerpm>      300.0 </idlerpm>
-  <maxrpm>      1200.0 </maxrpm>
-  <maxthrottle>    1.0 </maxthrottle>
-  <minthrottle>    0.1 </minthrottle>
-  <sparkfaildrop>  0.0 </sparkfaildrop>
+	<minmp unit="INHG">          6.0 </minmp>	<!-- Deprecated -->
+	<maxmp unit="INHG">         29.0 </maxmp>
+	<displacement unit="IN3"> 995.00 </displacement>
+	<maxhp>        110.00 </maxhp>		
+	<!--bsfc>           0.45 </bsfc-->
+	<cycles>         4.0 </cycles>
+	<idlerpm>     300.0 </idlerpm>
+	<maxrpm>      1200.0 </maxrpm>
+	<!--maxthrottle>    1.0 </maxthrottle>
+	<minthrottle>    0.25 </minthrottle -->
+	<sparkfaildrop>  0.0 </sparkfaildrop>
+	<volumetric-efficiency> 0.85 </volumetric-efficiency>
+
+	<!-- Optional items that affect engine performance -->
+	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
+	<bsfc>               0.20  </bsfc>
+	<stroke unit="IN">   6.63  </stroke>
+	<bore unit="IN">     4.41  </bore>
+	<cylinders>         9.00  </cylinders>
+	<compression-ratio> 5.00  </compression-ratio>
+
 </piston_engine>

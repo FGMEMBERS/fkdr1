@@ -1,4 +1,5 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
+
 <!--
 ************************************************************************
 Fokker Dr.1 (triplane) simulation config.  This file ties together all
@@ -26,89 +27,251 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 ************************************************************************
 -->
 
-<PropertyList include="fkdr1-shared-set.xml">
+<PropertyList>
 
- <sim>
+	<sim>
 
-  <description>Fokker Dr.1 (JSB)</description>
-  <author>Michael Selig (FDM) Erik Hofman (FDM) Ron Jensen (FDM), Erik Hofman (3D model)</author>
-  <status>production</status>
-  <rating>
-    <FDM type="int">5</FDM>
-    <systems type="int">3</systems>
-    <cockpit type="int">4</cockpit>
-    <model type="int">5</model>
-  </rating>
+		<description>Fokker Dr.1 (JSB)</description>
+		<author>Michael Selig (FDM) Erik Hofman (FDM) Ron Jensen (FDM), Erik Hofman (3D model)</author>
+		<status>production</status>
 
-  <flight-model>jsb</flight-model>
-  <aero>dr1</aero>
+		<rating>
+			<FDM type="int">5</FDM>
+			<systems type="int">3</systems>
+			<cockpit type="int">4</cockpit>
+			<model type="int">5</model>
+		</rating>
 
-  <model>
-   <path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
-   <livery>
-    <file type="string"/>
-   </livery>
-   <pushback>
-    <kp type="double">100</kp>
-    <ki type="double">25</ki>
-    <kd type="double">0</kd>
-    <position-norm type="double">0</position-norm>
-   </pushback>
-  </model>
+		<flight-model>jsb</flight-model>
 
- </sim>
+		<aero>dr1</aero>
+		<!-- Splash screen while loading -->
+		<startup>
+			<splash-texture>Aircraft/fkdr1/Splashes/splash1.jpg</splash-texture>
+			<splash-texture>Aircraft/fkdr1/Splashes/splash2.jpg</splash-texture>
+		</startup>
 
- <input>
-  <keyboard>
-   <key n="360">
-    <name>PageUp</name>
-    <desc>Increase mixture</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.adjMixture(1)
-     </script>
-    </binding>
-   </key>
+		<sound>
+			<path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
+		</sound>
 
-   <key n="361">
-    <name>PageDown</name>
-    <desc>Decrease mixture</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.adjMixture(-1)
-     </script>
-    </binding>
-   </key>
+		<model>
+			<path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
+			<livery>
+				<file type="string"/>
+			</livery>
+			<pushback>
+				<kp type="double">100</kp>
+				<ki type="double">25</ki>
+				<kd type="double">0</kd>
+				<position-norm type="double">0</position-norm>
+			</pushback>
+		</model>
 
-   <key n="98">
-    <name>b</name>
-    <desc>Operate blip switch</desc>
-    <binding>
-     <command>nasal</command>
-     <script>
-      setprop("controls/engines/engine/throttle", 0.0);
-      settimer( func {setprop("controls/engines/engine/throttle", 1.0);}, 0.75);
-     </script>
-    </binding>
-   </key>
+		<panel>
+			<path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
+			<visibility>false</visibility>
+		</panel>
+
+		<panel_2>
+			<path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
+			<visibility>true</visibility>
+		</panel_2>
+
+		<virtual-cockpit archive="y">true</virtual-cockpit>
+	
+		<rendering>
+			<camera-group>
+				<znear>0.15</znear>
+			</camera-group>
+		</rendering>
+
+		<view n="0">
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y">0.0</x-offset-m>
+				<z-offset-m archive="y">1.20</z-offset-m>
+				<y-offset-m archive="y">0.475</y-offset-m>
+				<default-field-of-view-deg>75</default-field-of-view-deg>
+			</config>
+		</view>
+
+		<!--
+		<view n="1">
+			<config>
+				<eye-heading-deg-path>orientation/gamma-horiz-deg</eye-heading-deg-path>
+			</config>
+		</view>
+		-->
+
+		<menubar>
+			<default>
+	
+				<menu n="100">
+					<label>Fokker Dr.1</label>
+					<enabled type="bool">true</enabled>
+
+					<item n="1">
+						<label>Pushback</label>
+						<enabled type="bool">true</enabled>
+						<name>pushback</name>
+						<binding>
+							<command>dialog-show</command>
+							<dialog-name>pushback</dialog-name>
+						</binding>
+					</item>
+	
+					<item n="2">
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								aircraft.livery.dialog.toggle();
+							</script>
+						</binding>
+					</item>
+				</menu>
+	
+			</default>
+		</menubar>
+
+		<help>
+			<title>Fokker Dr.1</title>
+
+			<key>
+				<name>s</name>
+				<desc>Start Engine</desc>
+			</key>
+			<key>
+				<name>{</name>
+				<desc>magneto OFF </desc>
+			</key>
+			<key>
+				<name>}</name>
+				<desc>magneto ON</desc>
+			</key>
+			<key>
+				<name>b</name>
+				<desc>blip for 0.75 seconds</desc>
+			</key>
+			<key>
+				<name>Shift+B</name>
+				<desc>add/remove chocks</desc>
+			</key>
+			<!--
+			<key>
+				<name>e</name>
+				<desc>fire guns </desc>
+			</key>
+			-->
+
+			<line>Pre Flight</line>
+			<line> </line>
+			<line> Make sue to set the altimeter to zero before flight. </line>
+			<line> Open the Fuel-Tap</line>
+			<line> Remove the chocks with Shift+B </line>
+			<line> </line>
+			<line>Starting</line>
+			<line> </line>
+			<line>To start, press '}' to turn the magneto on. Engage full throttle. Then press and </line>
+			<line>hold 's' until the engine catches -- it may take several seconds.</line> 
+			<line> </line>
+			<line>Take Off</line>
+			<line> </line>
+			<line>Zoom the view out so you can see the edges of the runway with your </line>
+			<line>peripheral vision.  Start the engine according to the instructions </line>
+			<line>above. As soon as the engine starts, the aircraft will start to roll</line>
+			<line> down the runway. (The DR.1 was not equipped with brakes.)</line>
+			<line>As soon as the aircraft starts to move, pull back firmly on the stick </line>
+			<line>to counter the aircraft's tendency to nose over.  As the aircraft picks up </line>
+			<line>speed, be prepared to firmly counter the aircraft's tendency to yaw right </line>
+			<line>and roll left. Countering this requires firm left rudder and right aileron, </line>
+			<line>while continuing to apply firm up elevator to counter the tendency to </line>
+			<line>nose over.</line>
+			<line></line>
+			<line>As the aircraft starts to lift off, gently ease the stick forward so as </line>
+			<line>to avoid a too-steep rate of climb. If you keep the stick pulled back the </line>
+			<line>aircraft will climb too rapidly and lose airspeed, leading to an inevitable </line>
+			<line>stall, roll, and crash.</line>
+			<line></line>
+			<line>Similarly, be prepared to ease off the rudder and aileron as the aircraft </line>
+			<line>picks up speed.</line>
+			<line> </line>
+			<!--
+			<line>Guns</line>
+			<line> </line>
+			<line>Guns have 250 rounds each, the maximum capacity of the Spandau lMG08 that was</line>
+			<line>standard on the DR1.</line>
+			<line></line>
+			<line>Note that guns will not work if AI models are disabled (the bullets</line> 
+			<line>and smoke are AI objects - tracer rounds will appear but they won't move).</line>
+			<line>Fire with the e key or a joystick trigger linked to /controls/armament/trigger. </line>
+			<line>Reload guns: Use the menu \-\- you must be on ground and stopped. </line>
+			-->
+		</help>
+	</sim>
+
+	<input>
+		<keyboard>
+			<key n="360">
+				<name>PageUp</name>
+				<desc>Increase mixture</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						controls.adjMixture(1)
+					</script>
+				</binding>
+			</key>
+
+			<key n="361">
+				<name>PageDown</name>
+				<desc>Decrease mixture</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						controls.adjMixture(-1)
+					</script>
+				</binding>
+			</key>
+
+			<key n="98">
+				<name>b</name>
+				<desc>Operate blip switch</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
+						setprop("controls/engines/engine/throttle", 0.0);
+						settimer( func {setprop("controls/engines/engine/throttle", 1.0);}, 0.75);
+					</script>
+				</binding>
+			</key>
     
-  </keyboard>
+		</keyboard>
 
- </input>
+	</input>
 
- <controls>
-   <engines>
-    <engine>
-     <fuel-pump type="bool">false</fuel-pump>
-     <throttle type="double">1.0</throttle>
-     <mixture type="double">0.0</mixture>
-    </engine>
-   </engines>
-  </controls>
+	<controls>
+		<engines>
+			<engine>
+				<fuel-pump type="bool">false</fuel-pump>
+				<throttle type="double">1.0</throttle>
+				<mixture type="double">0.0</mixture>
+			</engine>
+		</engines>
 
+		<gear>
+			<brake-parking type="bool">true</brake-parking>
+		</gear>
+	</controls>
+
+	<nasal>
+		<fkdr1>
+			<file>Aircraft/fkdr1/Nasal/liveries.nas</file>
+			<file>Aircraft/fkdr1/Nasal/systems.nas</file>
+		</fkdr1>
+	</nasal>
 
 </PropertyList>
