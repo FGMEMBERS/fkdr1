@@ -23,7 +23,7 @@
 	<maxhp>        110.00 </maxhp>		
 	<!--bsfc>           0.45 </bsfc-->
 	<cycles>         4.0 </cycles>
-	<idlerpm>     300.0 </idlerpm>
+	<idlerpm>     200.0 </idlerpm>
 	<maxrpm>      1200.0 </maxrpm>
 	<!--maxthrottle>    1.0 </maxthrottle>
 	<minthrottle>    0.25 </minthrottle -->
@@ -32,7 +32,7 @@
 
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
-	<bsfc>               0.20  </bsfc>
+	<bsfc>               0.45  </bsfc>
 	<stroke unit="IN">   6.63  </stroke>
 	<bore unit="IN">     4.41  </bore>
 	<cylinders>         9.00  </cylinders>
