@@ -110,6 +110,38 @@
 			<retractable>0</retractable>
 		</contact>
 
+		<contact type="BOGEY" name="LEFT_SKID">
+			<location unit="IN">
+				<x>  -39.4 </x>
+				<y> -104.2 </y>
+				<z>  -72.2 </z>
+			</location>
+			<static_friction>  0.80 </static_friction>
+			<dynamic_friction> 0.50 </dynamic_friction>
+			<rolling_friction> 0.02 </rolling_friction>
+			<spring_coeff unit="LBS/FT">      1000 </spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">  500 </damping_coeff>
+			<max_steer unit="DEG">0</max_steer>
+			<brake_group>NONE</brake_group>
+			<retractable>1</retractable>
+		</contact>
+
+		<contact type="BOGEY" name="RIGHT_SKID">
+			<location unit="IN">
+				<x>  -39.4 </x>
+				<y>  104.2 </y>
+				<z>  -72.2 </z>
+			</location>
+			<static_friction>  0.80 </static_friction>
+			<dynamic_friction> 0.50 </dynamic_friction>
+			<rolling_friction> 0.02 </rolling_friction>
+			<spring_coeff unit="LBS/FT">       1000 </spring_coeff>
+			<damping_coeff unit="LBS/FT/SEC">   500 </damping_coeff>
+			<max_steer unit="DEG">0</max_steer>
+			<brake_group>NONE</brake_group>
+			<retractable>1</retractable>
+		</contact>
+
 		<contact type="BOGEY" name="TAIL_SKID">
 			<location unit="IN">
 				<x> 162.20 </x>
@@ -123,7 +155,7 @@
 			<damping_coeff unit="LBS/FT/SEC">  100 </damping_coeff>
 			<steerability> STEERABLE </steerability>
 			<max_steer unit="DEG"> -15.00 </max_steer>
-			<brake_group>NONE</brake_group>
+			<brake_group>TAIL</brake_group>
 			<retractable>0</retractable>
 		</contact>
 
