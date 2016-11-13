@@ -8,7 +8,7 @@ kids 13
 OBJECT poly
 name "ellipse"
 loc 5.33142e-05 0.1578 -0.0271984
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18
@@ -56,7 +56,7 @@ kids 0
 OBJECT poly
 name "ellipse"
 loc -5.7286e-05 0.157742 -0.027122
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18
@@ -104,7 +104,7 @@ kids 0
 OBJECT poly
 name "ellipse"
 loc 0.0272376 0.157736 2.84575e-05
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18
@@ -152,7 +152,7 @@ kids 0
 OBJECT poly
 name "ellipse"
 loc 0.0272628 0.157787 2.83013e-07
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18
@@ -377,7 +377,7 @@ kids 0
 OBJECT poly
 name "ellipse"
 loc 0.0272881 0.157761 2.83013e-07
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18
@@ -3286,7 +3286,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.106454 -0.0110119 0.00169914
-texture "../dr1.rgb"
+texture "../dr1.png"
 crease 90.000000
 numvert 61
 0.147999 0.0114631 -0.0612878
@@ -3755,7 +3755,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.01934 2.68677e-05 9.78531e-05
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 41
@@ -4065,7 +4065,7 @@ kids 0
 OBJECT poly
 name "sphere"
 loc -3.68649e-06 0.0988892 2.04895e-05
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 45.000000
 numvert 240
@@ -7110,7 +7110,7 @@ kids 0
 OBJECT poly
 name "ellipse"
 loc -2.02864e-05 0.157761 -0.0271602
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 10 10
 crease 90.000000
 numvert 18

@@ -17,7 +17,7 @@ kids 26
 OBJECT poly
 name "object"
 loc 0.558235 -0.61763 -0.000265002
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 2
 -0.230329 -0.000190794 0.431663
@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.756521 -0.118176 1.01141
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 27
 -0.00119877 -0.102889 -1.02635
@@ -325,7 +325,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.823528 -0.0239063 -0.150004
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 52
 -0.0252994 0.000693794 0.29855
@@ -913,7 +913,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.558235 -0.61763 -0.000265002
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 5
 0.307845 0.000982285 0.40089
@@ -944,7 +944,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.861302 -0.0615459 -0.00457367
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 texoff 0 0.01
 crease 80.000000
 numvert 26
@@ -1123,7 +1123,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.859068 -0.405212 -0.000265002
-texture "wood1.rgb"
+texture "wood1.png"
 texrep 1 0.7
 crease 80.000000
 numvert 21
@@ -1382,7 +1382,7 @@ kids 0
 OBJECT poly
 name "gunback"
 loc 0.976076 0.136951 -0.0628964
-texture "leather.rgb"
+texture "leather.png"
 texrep 2 0.75
 crease 80.000000
 numvert 16
@@ -1477,7 +1477,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.716789 -0.240839 0.00351965
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 4
 -1.78814e-07 0.0461306 -0.281614
@@ -1496,7 +1496,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.666134 -0.113616 -0.000384439
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 texrep 2 1
 crease 80.000000
 numvert 20
@@ -1717,7 +1717,7 @@ kids 0
 OBJECT poly
 name "gunback"
 loc 0.976076 0.136951 0.0627575
-texture "leather.rgb"
+texture "leather.png"
 texrep 2 0.75
 crease 80.000000
 numvert 16
@@ -1884,7 +1884,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.632289 0.125975 -2.11522e-05
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 344
 -0.0311509 0.0532287 0.0687205
@@ -6008,7 +6008,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.823528 -0.0239063 -0.150004
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 52
 0.0237275 -0.000360198 -0.00119868
@@ -6596,7 +6596,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.823013 -0.0243934 -0.000650063
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 112
 -0.0285805 0.00118085 0.151196
@@ -7340,7 +7340,7 @@ kids 0
 OBJECT poly
 name "throttlePusher"
 loc 0.580029 -0.270138 0.309571
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 61
 0.275047 -0.0224965 -0.0120711
@@ -7985,7 +7985,7 @@ kids 0
 OBJECT poly
 name "fuel_tap"
 loc 0.547554 -0.305484 0.317589
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 112
 0.356505 0.00422844 -0.0107415
@@ -9353,7 +9353,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.792417 -0.254118 0.000286996
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 558
 0.0222207 0.232326 0.29136
@@ -14689,7 +14689,7 @@ kids 0
 OBJECT poly
 name "seat"
 loc 1.12915 -0.188585 -1.49012e-08
-texture "leather.rgb"
+texture "leather.png"
 texrep 6 6
 texoff 0.001 0
 crease 80.000000
@@ -14971,7 +14971,7 @@ kids 2
 OBJECT poly
 name "throttleLever"
 loc -0.031185 -0.037375 0.00822002
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 20
 -0.0368738 -0.036199 0.00185797
@@ -15111,7 +15111,7 @@ kids 0
 OBJECT poly
 name "throttleGrip"
 loc 0.031185 0.037375 -0.00821999
-texture "wood1.rgb"
+texture "wood1.png"
 texrep 5 0.7
 crease 80.000000
 numvert 74
@@ -15743,7 +15743,7 @@ kids 0
 OBJECT poly
 name "rudderPedals"
 loc 0.655129 -0.513186 0.000144091
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 417
 -0.0160014 0.0709261 0.210476
@@ -20632,7 +20632,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc 0.915257 -0.218364 0.307116
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 101
 0.0043447 -0.0271581 0.011432
@@ -21489,7 +21489,7 @@ kids 23
 OBJECT poly
 name "blip"
 loc 0.145699 0.0285449 -0.0286668
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 71
 -0.0062623 -0.00781874 0.00127406
@@ -22396,7 +22396,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.127203 0.0252876 -0.0286647
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 71
 0.00932729 0.00375032 0.00702094
@@ -23303,7 +23303,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.120516 0.0390071 -0.00100616
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 8
 0.0108069 0.00752447 0.00505072
@@ -23361,7 +23361,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.120516 0.039013 0.0126294
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 8
 0.0108069 -0.00752452 0.00505072
@@ -23419,7 +23419,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.25254 0.39462 0.108812
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 0.359285 -0.847569 -0.0893897
@@ -23519,7 +23519,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.77927 -0.321029 -0.0980659
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 0.882682 -0.13197 0.0876274
@@ -23619,7 +23619,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.720456 -0.0711198 0.00535884
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 18
 0.839474 0.0937351 0.0124419
@@ -23797,7 +23797,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.117875 0.00764903 0.00559294
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 32
 -0.0131171 0 0.0103935
@@ -23949,7 +23949,7 @@ kids 0
 OBJECT poly
 name "rod"
 loc 0.0256289 0.215025 0.00562024
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 38
 0.0683398 -0.189611 -0.00438528
@@ -24107,7 +24107,7 @@ kids 0
 OBJECT poly
 name "rod"
 loc 0.103537 -0.231163 0.00537914
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 98
 0.00320464 -0.221835 0.0140392
@@ -24717,7 +24717,7 @@ kids 4
 OBJECT poly
 name "cylinder"
 loc -0.000566542 0.0274971 -0.00802293
-texture "../rivet.rgb"
+texture "../rivet.png"
 crease 90.000000
 numvert 17
 -0.0194961 -0.00484225 -0.00259016
@@ -24846,7 +24846,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.000566542 -0.00137265 -0.00825563
-texture "../rivet.rgb"
+texture "../rivet.png"
 crease 90.000000
 numvert 17
 -0.0172862 -0.00252254 -0.00269515
@@ -24975,7 +24975,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.00711948 -0.0325857 0.0161792
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 27
 -0.0261668 -0.0155019 -0.0362119
@@ -25226,7 +25226,7 @@ kids 0
 OBJECT poly
 name "sphere"
 loc -0.00598651 0.00646125 9.93721e-05
-texture "wood1.rgb"
+texture "wood1.png"
 texrep 1 2
 texoff -0.2 0.04
 crease 80.000000
@@ -25859,7 +25859,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.175248 0.0146952 -0.0628105
-texture "../rivet.rgb"
+texture "../rivet.png"
 crease 90.000000
 numvert 17
 -0.0330586 -6.69658e-05 0.0140192
@@ -25988,7 +25988,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.175248 -0.0140933 -0.0629509
-texture "../rivet.rgb"
+texture "../rivet.png"
 crease 90.000000
 numvert 17
 -0.0266375 -0.00173435 0.0116995
@@ -26484,7 +26484,7 @@ kids 0
 OBJECT poly
 name "sphere"
 loc 0.161021 0.00254171 -0.0603937
-texture "wood1.rgb"
+texture "wood1.png"
 texrep 2 2
 texoff -0.58 -0.05
 crease 80.000000
@@ -27117,7 +27117,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.174506 -0.0475025 -0.0102302
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 54
 -0.0276073 -0.00583224 -0.0303072
@@ -27719,7 +27719,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc 0.157255 -0.0397356 0.0457819
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 134
 0.00282162 -0.0223049 -0.00536928
@@ -29049,7 +29049,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.156023 -0.0636171 0.0282047
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 30
 -0.0342052 -0.00257395 -0.0233782
@@ -29267,7 +29267,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.148545 -0.0417324 0.00680984
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 45
 -0.0258348 -0.0269896 0.00050161
@@ -29680,7 +29680,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc 0.157223 -0.0397777 0.0457819
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 texrep 2 1
 crease 80.000000
 numvert 134
@@ -31019,7 +31019,7 @@ kids 3
 OBJECT poly
 name "cylinder"
 loc -0.127687 0.0284611 0.0390086
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 0.62345 -0.0932122 -0.0618923
@@ -31119,7 +31119,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.376229 0.0634388 -0.00472492
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 12
 0.873273 -0.126154 -0.0226796
@@ -31181,7 +31181,7 @@ kids 0
 OBJECT poly
 name "trigger_left"
 loc 0.503917 -0.0918999 -0.0342837
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 47
 -0.0123836 0.0385493 -0.00118631
@@ -31708,7 +31708,7 @@ kids 3
 OBJECT poly
 name "cylinder"
 loc -0.127635 0.0284996 -0.053065
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 0.624043 -0.0955083 0.0631371
@@ -31808,7 +31808,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.376259 0.0634185 0.0327749
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 12
 0.874444 -0.128088 -0.0194207
@@ -31870,7 +31870,7 @@ kids 0
 OBJECT poly
 name "trigger_right"
 loc 0.503895 -0.0919181 0.0202901
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 47
 -0.00663131 0.0284235 -0.00854736

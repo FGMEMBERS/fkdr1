@@ -7,7 +7,7 @@ kids 3
 OBJECT poly
 name "disk"
 loc -0.00204681 2.21237e-05 0.000180601
-texture "../dr1.rgb"
+texture "../dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 33
@@ -241,7 +241,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.000174553 -0.000228099 0.000258772
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 45.000000
 numvert 160
 -0.000396874 0.0421873 1.94386e-05

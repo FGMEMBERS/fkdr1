@@ -6,7 +6,7 @@ kids 4
 OBJECT poly
 name "uhrzeiger"
 loc 0.00356575 0.00339203 -0.00507032
-texture "../dr1trans.rgb"
+texture "../dr1trans.png"
 crease 45.000000
 numvert 4
 -0.000283775 -0.0145412 0.00807315
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.0263979 0.000542418 -0.000220549
-texture "../dr1.rgb"
+texture "../dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 33
@@ -259,7 +259,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.00286236 4.59124e-07 5.78584e-08
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 45.000000
 numvert 160
 0.000440281 -0.00409325 -0.0207726
@@ -2347,7 +2347,7 @@ kids 0
 OBJECT poly
 name "minutenzeiger"
 loc 0.0043553 -0.003548 0.00320045
-texture "../dr1trans.rgb"
+texture "../dr1trans.png"
 crease 45.000000
 numvert 4
 0 0.00182157 -0.00510532

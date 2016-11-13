@@ -13863,7 +13863,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.00300795 -0.115527 6.75023e-05
-texture "bolt-M8.rgb"
+texture "bolt-M8.png"
 crease 90.000000
 numvert 28
 0.298179 0.064891 0.0290829
@@ -14304,7 +14304,7 @@ kids 11
 OBJECT poly
 name "disk"
 loc 0.45409 -0.0184835 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.00199303 0.0180344 0.0318543
@@ -14482,7 +14482,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.484451 -0.0184835 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.0045239 0.0179903 0.0309487
@@ -14660,7 +14660,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.356736 -0.0221251 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 0.000886366 0.021407 0.0309487
@@ -14838,7 +14838,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.168217 0.0329804 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 0.00332575 0.0304886 0.0318543
@@ -15016,7 +15016,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.173226 -0.000292173 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.00124569 0.0157669 0.0318543
@@ -15194,7 +15194,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.515127 -0.0186219 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.00452876 0.0180475 0.0309487
@@ -15372,7 +15372,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.54279 -0.0192057 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.00124568 0.0182981 0.0318543
@@ -15550,7 +15550,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.326457 -0.0221251 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 0.000886366 0.021407 0.0309487
@@ -15728,7 +15728,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.290977 -0.0221251 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 0.0132624 0.021407 0.0318543
@@ -15906,7 +15906,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.173226 0.0266285 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 -0.00377695 0.0157669 0.0309487
@@ -16084,7 +16084,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.175328 0.0487265 0.045384
-texture "rivet.rgb"
+texture "rivet.png"
 crease 90.000000
 numvert 26
 0.000794478 0.0304886 0.0309487
@@ -16282,7 +16282,7 @@ kids 0
 OBJECT poly
 name "gunpad"
 loc 0.588384 0.0876907 0.209724
-texture "Cockpit/leather.rgb"
+texture "Cockpit/leather.png"
 crease 90.000000
 numvert 25
 -0.00942194 -0.0279031 0

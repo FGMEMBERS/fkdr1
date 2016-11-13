@@ -5,7 +5,7 @@ kids 2
 OBJECT poly
 name "sphere"
 loc 0.066043 0.0772825 0.0527505
-texture "Cockpit/leather.rgb"
+texture "Cockpit/leather.png"
 crease 45.000000
 numvert 59
 -0.0668561 0.0140553 -0.0222603
@@ -696,7 +696,7 @@ kids 0
 OBJECT poly
 name "sphere"
 loc 0.136717 0.0660376 -0.0474693
-texture "Cockpit/leather.rgb"
+texture "Cockpit/leather.png"
 crease 45.000000
 numvert 59
 0.124344 -0.0464835 0.0111102

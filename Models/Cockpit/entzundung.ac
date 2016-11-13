@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "cylinder"
 loc 0.462305 0.942731 -0.0221062
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 -0.441096 -0.932932 0.145186
@@ -108,7 +108,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.0877829 1.03641 0.132592
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 25
 0.114644 -1.01146 7.94828e-05
@@ -405,7 +405,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00104295 -0.0111784 0.0831001
-texture "wood1.rgb"
+texture "wood1.png"
 crease 90.000000
 numvert 40
 0.0279102 0.0257758 0.0429954
@@ -909,7 +909,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.000451809 -0.0115439 0.118007
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 161
 0.0136688 0.0142699 0.00580525
@@ -2806,7 +2806,7 @@ kids 0
 OBJECT poly
 name "knopf"
 loc 0.0858613 -0.150346 0.200316
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 97
 -0.0822514 0.154592 -0.101282
@@ -3999,7 +3999,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.883944 0.576343 -0.0220479
-texture "../bolt-M8.rgb"
+texture "../bolt-M8.png"
 crease 80.000000
 numvert 14
 0.861678 -0.570791 0.148106
@@ -4099,7 +4099,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.117293 1.03636 0.132592
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 80.000000
 numvert 25
 0.102889 -1.02634 -0.00124756

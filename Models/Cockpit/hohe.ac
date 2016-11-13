@@ -14,7 +14,7 @@ loc 0.000262395 -0.0578011 0.0499861
 kids 2
 OBJECT poly
 name "cylinder"
-texture "dirtmap.rgb"
+texture "dirtmap.png"
 crease 90.000000
 numvert 16
 -0.0108504 -0.0125161 0.023466
@@ -93,7 +93,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-texture "wood1.rgb"
+texture "wood1.png"
 crease 90.000000
 numvert 34
 -0.0103128 -0.0142524 0.0243753
@@ -343,7 +343,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00358568 -0.0520693 0.0346436
-texture "spring.rgba"
+texture "spring.png"
 texrep 1 2
 crease 90.000000
 numvert 48
@@ -568,7 +568,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00358568 0.05677 0.0245995
-texture "spring.rgba"
+texture "spring.png"
 texrep 1 2
 crease 90.000000
 numvert 48
@@ -793,7 +793,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.00156358 0.0143155 0.0306157
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 90.000000
 numvert 24
 -0.00257513 -0.0487055 -0.0066864
@@ -916,7 +916,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.00156358 -0.0258195 -0.0209014
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 90.000000
 numvert 24
 -0.00329595 0.0478136 -0.015849
@@ -1039,7 +1039,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.00206033 0.0015834 9.67938e-05
-texture "../dr1.rgb"
+texture "../dr1.png"
 texrep -1 1
 texoff 0.507 0.482
 crease 45.000000
@@ -1274,7 +1274,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.000189029 0.00079083 4.95268e-05
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 texrep 30 5
 texoff 0.09 0
 crease 45.000000
@@ -3798,7 +3798,7 @@ kids 0
 OBJECT poly
 name "knopf"
 loc -0.00707538 5.90042e-05 -0.0398054
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 90.000000
 numvert 25
 0.00519615 0.003 -0.00261371
@@ -3987,7 +3987,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.00156358 0.0163607 -0.0291788
-texture "brushed_alloy.rgb"
+texture "brushed_alloy.png"
 crease 90.000000
 numvert 24
 -0.00257513 0.0224591 0.0437324
@@ -4110,7 +4110,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00358568 0.0343914 -0.0517781
-texture "spring.rgba"
+texture "spring.png"
 texrep 1 2
 crease 90.000000
 numvert 48

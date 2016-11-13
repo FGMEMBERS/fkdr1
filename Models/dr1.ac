@@ -21,7 +21,7 @@ kids 27
 OBJECT poly
 name "exhaust"
 loc -0.305301 -0.346149 -0.000390627
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 90.000000
 numvert 54
 0.0453174 0.0214714 0.530194
@@ -20432,7 +20432,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.217097 -1.63938 -0.824351
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 45.000000
 numvert 9
 0 0 -0.0454848
@@ -20497,7 +20497,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.217556 -1.63945 -0.713528
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 45.000000
 numvert 9
 0 0 0.0454847
@@ -20562,7 +20562,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.217077 -1.63877 0.817297
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 45.000000
 numvert 9
 0 0 0.0454848
@@ -20627,7 +20627,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.216618 -1.6387 0.706473
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 45.000000
 numvert 9
 0 0 -0.0454847
@@ -20692,7 +20692,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.116079 -0.849024 0.125495
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 2
 0.00452328 0.0134038 -0.130738
@@ -21310,7 +21310,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 3.97276 -0.615742 -0.00455301
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 crease 45.000000
 numvert 20
 0.145612 -0.057568 0.0105092
@@ -21534,7 +21534,7 @@ kids 10
 OBJECT poly
 name "cylinder"
 loc 1.48191 -0.309506 -0.198828
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 15
@@ -21678,7 +21678,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 1.97646 2.85095 2.52355
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 12
 0.0106444 -3.23376 -2.10924
@@ -21770,7 +21770,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 1.97649 2.8501 2.00807
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 12
 0.0105619 -3.23279 -2.81816
@@ -21866,7 +21866,7 @@ kids 4
 OBJECT poly
 name "cylinder"
 loc -2.22162 0.0416574 3.41919
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 -0.130262 0.418326 -0.12553
@@ -21986,7 +21986,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -2.22147 0.0416522 2.52666
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 -0.130262 0.418307 0.125528
@@ -22106,7 +22106,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -1.89019 -0.0452709 3.4271
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 0.159564 0.318437 -0.123696
@@ -22226,7 +22226,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -1.89032 -0.0452464 2.52779
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 0.159566 0.318449 0.122026
@@ -22350,7 +22350,7 @@ kids 2
 OBJECT poly
 name "left_elevator"
 loc 0.322506 -0.0177211 0.729221
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 13
@@ -22504,7 +22504,7 @@ kids 0
 OBJECT poly
 name "right_elevator"
 loc 0.323787 -0.0182632 -0.744843
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 13
@@ -22658,7 +22658,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -1.81751 -0.741901 -0.192734
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 10
 -0.497059 -1.05225 -0.707751
@@ -22724,7 +22724,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc -1.99422 -1.78309 -0.195944
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 12
 -0.0567453 -0.0539832 0.703053
@@ -22804,7 +22804,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -2.50647 -0.445733 -0.195875
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 160
@@ -24479,7 +24479,7 @@ kids 0
 OBJECT poly
 name "rudder"
 loc 0.313376 -0.43142 -0.194998
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 81
@@ -25521,7 +25521,7 @@ kids 1
 OBJECT poly
 name "hull"
 loc 1.30472 -0.269314 -0.00233097
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 126
@@ -26882,7 +26882,7 @@ kids 0
 OBJECT poly
 name "skirt"
 loc 1.09665 0.0419674 -0.00324821
-texture "Cockpit/leather.rgb"
+texture "Cockpit/leather.png"
 texrep 10 10
 texoff -0.04 0.2
 crease 90.000000
@@ -27686,7 +27686,7 @@ kids 1
 OBJECT poly
 name "hull"
 loc 1.30472 -0.269314 -0.00233097
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 25
@@ -27732,7 +27732,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.64529 -0.28624 -0.003141
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 23
@@ -27944,7 +27944,7 @@ kids 11
 OBJECT poly
 name "object"
 loc 0.351026 -0.56414 0.234489
-texture "dr1.rgb"
+texture "dr1.png"
 texoff 0.09 0.03
 crease 45.000000
 numvert 126
@@ -29427,7 +29427,7 @@ kids 4
 OBJECT poly
 name "cylinder"
 loc -2.05631 -0.417683 2.07413
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 -0.153378 -0.437429 0.207356
@@ -29547,7 +29547,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -2.05606 -0.418017 3.2103
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 -0.153123 -0.437428 -0.207356
@@ -29667,7 +29667,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -1.59151 -0.417714 2.07426
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 0.160498 -0.437429 0.207356
@@ -29787,7 +29787,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -1.59202 -0.418048 3.21042
-texture "dr1.rgb"
+texture "dr1.png"
 crease 45.000000
 numvert 16
 0.160498 -0.437428 -0.207356
@@ -29907,7 +29907,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.198143 -0.0915936 2.72
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 12
@@ -30000,7 +30000,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.198143 -0.0913696 -2.2621
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 12
@@ -30097,7 +30097,7 @@ kids 2
 OBJECT poly
 name "object"
 loc -0.121044 0.00343734 5.09024e-05
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 328
@@ -33788,7 +33788,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.121044 -0.00343734 -5.09024e-05
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 368
@@ -37975,7 +37975,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.225626 -1.00699 0.242827
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 441
@@ -43165,7 +43165,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.306547 -0.127718 0.245941
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 324
@@ -46834,7 +46834,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.258115 0.793501 0.239678
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 420
@@ -51661,7 +51661,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.256957 0.756809 0.239678
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 342
@@ -55472,7 +55472,7 @@ kids 2
 OBJECT poly
 name "object"
 loc -0.00189304 -0.00273174 -2.35021
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 49
@@ -55896,7 +55896,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.00241077 -0.00250417 2.35021
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 50
@@ -56337,7 +56337,7 @@ kids 2
 OBJECT poly
 name "object"
 loc -0.00244176 -0.00248116 2.34779
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 50
@@ -56774,7 +56774,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.00186193 -0.00275475 -2.34779
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 49
@@ -57202,7 +57202,7 @@ kids 4
 OBJECT poly
 name "object"
 loc 0.228484 -0.430439 -1.72113
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 45.000000
 numvert 16
 -0.374769 0.401397 -3.17881
@@ -57310,7 +57310,7 @@ kids 0
 OBJECT poly
 name "object"
 loc 0.22924 -0.430529 1.71863
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 45.000000
 numvert 16
 -0.374769 0.401398 -3.17881
@@ -57418,7 +57418,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.261504 0.435963 -1.84542
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 45.000000
 numvert 16
 -0.372776 1.35241 -3.17881
@@ -57526,7 +57526,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -0.262461 0.435707 1.84792
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 45.000000
 numvert 16
 -0.371818 1.35266 -3.17881
@@ -57638,7 +57638,7 @@ kids 6
 OBJECT poly
 name "poly"
 loc 0.1496 -0.0214924 2.64072
-texture "Cockpit/wood1.rgb"
+texture "Cockpit/wood1.png"
 crease 45.000000
 numvert 20
 -0.441521 0.00966203 0.000206709
@@ -57882,7 +57882,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc -0.145135 0.0170156 2.6807
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 texrep -1 1
 crease 45.000000
 numvert 20
@@ -58115,7 +58115,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc -0.00450471 0.00432765 2.68066
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 texrep -1 1
 crease 45.000000
 numvert 20
@@ -58348,7 +58348,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc -0.145123 0.0168836 -2.6543
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 texrep -1 1
 crease 45.000000
 numvert 20
@@ -58581,7 +58581,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc -0.0044927 0.00420761 -2.65434
-texture "Cockpit/dirtmap.rgb"
+texture "Cockpit/dirtmap.png"
 texrep -1 1
 crease 45.000000
 numvert 20
@@ -58814,7 +58814,7 @@ kids 0
 OBJECT poly
 name "poly"
 loc 0.149654 -0.0209423 -2.69345
-texture "Cockpit/wood1.rgb"
+texture "Cockpit/wood1.png"
 texrep -1 1
 crease 45.000000
 numvert 20
@@ -59063,7 +59063,7 @@ kids 0
 OBJECT poly
 name "propeller_disk"
 loc -0.864312 -0.401353 0.00301695
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 90.000000
 numvert 94
 -0.0122894 5.60284e-06 -0.0030019
@@ -60008,7 +60008,7 @@ kids 0
 OBJECT poly
 name "engine_disk"
 loc -0.638858 -0.401328 0.000524297
-texture "dr1trans.rgb"
+texture "dr1trans.png"
 crease 90.000000
 numvert 68
 0.0816573 -0.0729697 0.375099
@@ -61417,7 +61417,7 @@ kids 0
 OBJECT poly
 name "propeller"
 loc -0.332602 0.0092698 0.00082976
-texture "dr1.rgb"
+texture "dr1.png"
 texrep -1 1
 crease 45.000000
 numvert 100

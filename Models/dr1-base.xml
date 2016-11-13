@@ -122,7 +122,7 @@
    <object-name>wings</object-name>
    <property-base>sim/model/livery</property-base>
    <texture-prop>texture</texture-prop>
-   <texture>dr1.rgb</texture>
+   <texture>dr1.png</texture>
  </animation>
 
  <animation>
@@ -133,7 +133,7 @@
    <object-name>gunpad</object-name>
    <property-base>sim/model/livery-leather</property-base>
    <texture-prop>texture</texture-prop>
-   <texture>leather.rgb</texture>
+   <texture>leather.png</texture>
  </animation>
 
  <animation>
@@ -141,7 +141,7 @@
    <object-name>wing_marks</object-name>
    <property-base>sim/model/livery-logo</property-base>
    <texture-prop>texture</texture-prop>
-   <texture>dr1trans.rgb</texture>
+   <texture>dr1trans.png</texture>
  </animation>
 
 </PropertyList>
