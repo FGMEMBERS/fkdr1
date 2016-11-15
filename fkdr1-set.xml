@@ -47,8 +47,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 		<aero>dr1</aero>
 		<!-- Splash screen while loading -->
 		<startup>
-			<splash-texture>Aircraft/fkdr1/Splashes/splash1.jpg</splash-texture>
-			<splash-texture>Aircraft/fkdr1/Splashes/splash2.jpg</splash-texture>
+			<splash-texture>Aircraft/fkdr1/Splashes/USATour-splash-fkdr1.png</splash-texture>
 		</startup>
 
 		<sound>
