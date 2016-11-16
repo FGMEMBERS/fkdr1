@@ -67,6 +67,11 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 			</pushback>
 		</model>
 
+		<submodels> 
+			<serviceable type="bool">true</serviceable>
+			<path>Aircraft/Albatros-DIII/Models/Effects/guns/submodels.xml</path>
+		</submodels>
+
 		<panel>
 			<path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
 			<visibility>false</visibility>
@@ -105,6 +110,21 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
 		<menubar>
 			<default>
+
+				<menu n="3">
+					<item>
+						<name>autopilot</name>
+						<label>Autopilot Settings</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", 
+											"Aircraft/fkdr1/Dialogs/autopilot8_1.xml");
+								autopilot.open();
+							</script>
+						</binding>
+					</item>
+				</menu>
 	
 				<menu n="100">
 					<label>Fokker Dr.1</label>
@@ -133,6 +153,12 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 	
 			</default>
 		</menubar>
+
+		<airport>
+			<runways>
+				<start-offset-m>75</start-offset-m>
+			</runways>
+		</airport>
 
 		<help>
 			<title>Fokker Dr.1</title>
@@ -208,10 +234,34 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 			<line>Reload guns: Use the menu \-\- you must be on ground and stopped. </line>
 			-->
 		</help>
+
+		<!-- Systems -->
+		<systems>
+			<autopilot>
+				<path>Aircraft/fkdr1/Systems/SYS8_1_autopilot.xml</path>
+			</autopilot>
+		</systems>
+
 	</sim>
 
 	<input>
 		<keyboard>
+
+			<key n="101">
+				<name>e</name>
+				<desc>Guns</desc>
+				<binding>
+					<command>nasal</command>
+					<script>guns.fire_MG()</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>guns.stop_MG()</script>
+					</binding>
+				</mod-up>
+			</key>
+
 			<key n="360">
 				<name>PageUp</name>
 				<desc>Increase mixture</desc>
@@ -265,8 +315,30 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 			<brake-parking type="bool">true</brake-parking>
 		</gear>
 	</controls>
+    
+	<!-- Autopilot initialization -->
+	<autopilot>
+
+		<settings>
+			<kts-mach-select type="string">kts</kts-mach-select>
+			<max-pitch type="float"> 8.0</max-pitch>
+			<min-pitch type="float">-6.0</min-pitch>
+			<bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
+		</settings>
+
+		<internal>
+			<target-pitch-deg type="float">0.00</target-pitch-deg>
+			<max-pitch type="float"> 8.0</max-pitch>
+			<min-pitch type="float">-6.0</min-pitch>
+		</internal>
+
+	</autopilot>
 
 	<nasal>
+		<guns>
+			<file>Aircraft/fkdr1/Nasal/weapons.nas</file>
+			<file>Aircraft/fkdr1/Nasal/revi.nas</file>
+		</guns>
 		<fkdr1>
 			<file>Aircraft/fkdr1/Nasal/liveries.nas</file>
 			<file>Aircraft/fkdr1/Nasal/systems.nas</file>

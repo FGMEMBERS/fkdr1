@@ -90,7 +90,7 @@
 			<spring_coeff unit="LBS/FT">      1000 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">  500 </damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
-			<brake_group>NONE</brake_group>
+			<brake_group>LEFT</brake_group>
 			<retractable>0</retractable>
 		</contact>
 
@@ -106,7 +106,7 @@
 			<spring_coeff unit="LBS/FT">       1000 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">   500 </damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
-			<brake_group>NONE</brake_group>
+			<brake_group>RIGHT</brake_group>
 			<retractable>0</retractable>
 		</contact>
 

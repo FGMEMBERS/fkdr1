@@ -2,146 +2,147 @@
 
 <PropertyList>
 
- <path>dr1.ac</path>
+	<path>dr1.ac</path>
 
- <offsets>
-  <z-m>0.25</z-m>
- </offsets>
+	<offsets>
+		<z-m>0.25</z-m>
+	</offsets>
 
- <nasal>
-  <load>
-   var livery_update = aircraft.livery_update.new(
-        "Aircraft/fkdr1/Models/Liveries", 10);
-  </load>
-  <unload>
-   livery_update.stop();
-  </unload>
- </nasal>
+	<nasal>
+		<load>
+			var livery_update = aircraft.livery_update.new("Aircraft/fkdr1/Models/Liveries", 10);
+		</load>
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
 
- <model>
-  <name>Chocks</name>
-  <path>Aircraft/fkdr1/Models/chocks.xml</path>
- </model>
+	<model>
+		<name>Chocks</name>
+		<path>Aircraft/fkdr1/Models/chocks.xml</path>
+	</model>
 
- <model>
-  <name>cockpit</name>
-  <path>Aircraft/fkdr1/Models/Cockpit/cockpit.xml</path>
- </model>
+	<model>
+		<name>cockpit</name>
+		<path>Aircraft/fkdr1/Models/Cockpit/cockpit.xml</path>
+	</model>
 
-<!--
- <effect>
-  <inherits-from>Aircraft/fkdr1/Models/Effects/cylinder-normal</inherits-from>
-  <object-name>cylinders</object-name>
- </effect>
--->
+	<!--
+		<effect>
+			<inherits-from>Aircraft/fkdr1/Models/Effects/cylinder-normal</inherits-from>
+			<object-name>cylinders</object-name>
+		</effect>
+	-->
 
- <model>
-  <name>leftMGgun</name>
-  <path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
-  <offsets>
-   <x-m>0.535</x-m>
-   <y-m>-0.15</y-m>
-   <z-m>0.149</z-m>
-  </offsets>
- </model>
+	<model>
+		<name>leftMGgun</name>
+		<path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
+		<offsets>
+			<x-m>0.535</x-m>
+			<y-m>-0.15</y-m>
+			<z-m>0.149</z-m>
+		</offsets>
+	</model>
 
- <model>
-  <name>rightMGgun</name>
-  <path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
-  <offsets>
-   <x-m>0.535</x-m>
-   <y-m>0.15</y-m>
-   <z-m>0.149</z-m>
-  </offsets>
- </model>
+	<model>
+		<name>rightMGgun</name>
+		<path>Aircraft/fkdr1/Models/MG-ver6.ac</path>
+		<offsets>
+			<x-m>0.535</x-m>
+			<y-m>0.15</y-m>
+			<z-m>0.149</z-m>
+		</offsets>
+	</model>
 
- <animation>
-  <type>spin</type>
-  <object-name>propeller</object-name>
-  <object-name>cylinders</object-name>
-  <property>engines/engine[0]/rpm</property>
-  <factor>-1.0</factor>
-  <center>
-   <x-m>-0.88</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-0.40</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
- <animation>
-  <type>spin</type>
-  <object-name>propeller_disk</object-name>
-  <object-name>engine_disk</object-name>
-  <property>engines/engine[0]/rpm</property>
-  <factor>-0.08</factor>
-  <center>
-   <x-m>-0.88</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-0.40</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
+	<animation>
+		<type>spin</type>
+		<object-name>propeller</object-name>
+		<object-name>cylinders</object-name>
+		<property>engines/engine[0]/rpm</property>
+		<factor>-1.0</factor>
+		<center>
+			<x-m>-0.88</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.40</z-m>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
 
- <!-- propeller and engine disks -->
- <animation>
-  <type>select</type>
-  <object-name>propeller</object-name>
-  <object-name>cylinders</object-name>
-  <condition>
-   <less-than>
-    <property>engines/engine/rpm</property>
-    <value>400</value>
-   </less-than>
-  </condition>
- </animation>
- <animation>
-  <type>select</type>
-  <object-name>propeller_disk</object-name>
-  <object-name>engine_disk</object-name>
-  <condition>
-   <greater-than>
-    <property>engines/engine/rpm</property>
-    <value>300</value>
-   </greater-than>
-  </condition>
- </animation>
+	<animation>
+		<type>spin</type>
+		<object-name>propeller_disk</object-name>
+		<object-name>engine_disk</object-name>
+		<property>engines/engine[0]/rpm</property>
+		<factor>-0.08</factor>
+		<center>
+			<x-m>-0.88</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.40</z-m>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
 
- <!-- livery selection -->
- <animation>
-  <type>material</type>
-   <object-name>propeller</object-name>
-   <object-name>fuselage</object-name>
-   <object-name>wings</object-name>
-   <property-base>sim/model/livery</property-base>
-   <texture-prop>texture</texture-prop>
-   <texture>dr1.png</texture>
- </animation>
+	<!-- propeller and engine disks -->
+	<animation>
+		<type>select</type>
+		<object-name>propeller</object-name>
+		<object-name>cylinders</object-name>
+		<condition>
+			<less-than>
+				<property>engines/engine/rpm</property>
+				<value>400</value>
+			</less-than>
+		</condition>
+	</animation>
 
- <animation>
-  <type>material</type>
-   <object-name>skirt</object-name>
-   <object-name>seat</object-name>
-   <object-name>gunback</object-name>
-   <object-name>gunpad</object-name>
-   <property-base>sim/model/livery-leather</property-base>
-   <texture-prop>texture</texture-prop>
-   <texture>leather.png</texture>
- </animation>
+	<animation>
+		<type>select</type>
+		<object-name>propeller_disk</object-name>
+		<object-name>engine_disk</object-name>
+		<condition>
+			<greater-than>
+				<property>engines/engine/rpm</property>
+				<value>300</value>
+			</greater-than>
+		</condition>
+	</animation>
 
- <animation>
-  <type>material</type>
-   <object-name>wing_marks</object-name>
-   <property-base>sim/model/livery-logo</property-base>
-   <texture-prop>texture</texture-prop>
-   <texture>dr1trans.png</texture>
- </animation>
+	<!-- livery selection -->
+	<animation>
+		<type>material</type>
+		<object-name>propeller</object-name>
+		<object-name>fuselage</object-name>
+		<object-name>wings</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>dr1.png</texture>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>skirt</object-name>
+		<object-name>seat</object-name>
+		<object-name>gunback</object-name>
+		<object-name>gunpad</object-name>
+		<property-base>sim/model/livery-leather</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>leather.png</texture>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>wing_marks</object-name>
+		<property-base>sim/model/livery-logo</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>dr1trans.png</texture>
+	</animation>
 
 </PropertyList>
