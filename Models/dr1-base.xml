@@ -11,6 +11,7 @@
 	<nasal>
 		<load>
 			var livery_update = aircraft.livery_update.new("Aircraft/fkdr1/Models/Liveries", 10);
+print("nasal load mp");
 		</load>
 		<unload>
 			livery_update.stop();
