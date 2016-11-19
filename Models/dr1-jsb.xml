@@ -2,6 +2,16 @@
 
 <PropertyList>
 
+	<nasal>
+		<load>
+			var livery_update = aircraft.livery_update.new("Aircraft/fkdr1/Models/Liveries", 10);
+print("nasal load mp");
+		</load>
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
+
 	<model>
 		<name>dr1</name>
 		<path>Aircraft/fkdr1/Models/dr1-base.xml</path>
