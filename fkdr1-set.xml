@@ -69,7 +69,7 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 
 		<submodels> 
 			<serviceable type="bool">true</serviceable>
-			<path>Aircraft/Albatros-DIII/Models/Effects/guns/submodels.xml</path>
+			<path>Aircraft/fkdr1/Models/Effects/guns/submodels.xml</path>
 		</submodels>
 
 		<panel>
