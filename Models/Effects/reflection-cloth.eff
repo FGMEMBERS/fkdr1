@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>Aircraft/fkdr1/Models/Effects/reflection</name>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec</inherits-from>
+</PropertyList>
+
