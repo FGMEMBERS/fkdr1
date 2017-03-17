@@ -54,18 +54,22 @@
  </model>
 
  <effect>
-  <inherits-from>Aircraft/fkdr1/Models/Effects/reflection</inherits-from>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-reflection</inherits-from>
   <object-name>metal</object-name>
   <object-name>cowling</object-name>
   <object-name>exhaust</object-name>
-  <object-name>disk</object-name>
   <object-name>skid</object-name>
  </effect>
 
  <effect>
-  <inherits-from>Aircraft/fkdr1/Models/Effects/reflection-cloth</inherits-from>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-reflection-cloth</inherits-from>
   <object-name>cloth</object-name>
   <object-name>wood</object-name>
+ </effect>
+
+ <effect>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/reflection</inherits-from>
+  <object-name>skid</object-name>
  </effect>
 
  <!-- livery selection -->
