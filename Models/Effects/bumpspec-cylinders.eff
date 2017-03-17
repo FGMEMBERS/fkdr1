@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
-  <name>Aircraft/fkdr1/Models/Effects/cylinder-normal</name>
-  <inherits-from>Effects/bumpspec</inherits-from>
+  <name>Aircraft/fkdr1/Models/Effects/bumpspec-cylinders</name>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec</inherits-from>
   <parameters>
     <texture n="2">
       <image>Aircraft/fkdr1/Models/cylinder_normals.png</image>
