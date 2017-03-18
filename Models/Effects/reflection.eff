@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
- <name>Aircraft/fkdr1/Models/Effects/bumpspec</name>
+ <name>Aircraft/fkdr1/Models/Effects/reflection</name>
  <inherits-from>Effects/model-combined-deferred</inherits-from>
  <parameters>
   <rain-enabled type="int">2</rain-enabled>

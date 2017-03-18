@@ -59,6 +59,21 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    </preview>
    <preview>
     <type>exterior</type>
+    <path>Preview/action2.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action3.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action4.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
     <path>Preview/tied-down.jpg</path>
     <splash type="bool">false</splash>
    </preview>
@@ -119,6 +134,41 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
     <menu n="100">
      <label>Fokker Dr.1</label>
      <enabled type="bool">true</enabled>
+     <item>
+      <label>Autostart</label>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/fuel-pump</property>
+       <value type="bool">true</value>
+      </binding>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/magnetos</property>
+       <value type="int">3</value>
+      </binding>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/mixture</property>
+       <value type="float">1.0</value>
+      </binding>
+      <binding>
+       <command>nasal</command>
+       <script>
+        controls.startEngine(1);
+        controls.applyParkingBrake(0);
+      </script>
+      </binding>
+      <binding>
+       <command>nasal</command>
+       <script>
+        var timer = maketimer(20, func(){
+            controls.startEngine(0);
+        });
+        timer.singleShot = 1;
+        timer.start();
+       </script>
+      </binding>
+     </item>
      <item>
       <label>Select Livery</label>
       <binding>
