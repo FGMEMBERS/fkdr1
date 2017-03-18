@@ -29,8 +29,50 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 <PropertyList>
 
  <sim include="help.xml">
-   <!-- don't make a variant for this file -->
-   <exclude-from-catalog type="bool">true</exclude-from-catalog>
+  <!-- don't make a variant for this file -->
+  <exclude-from-catalog type="bool">true</exclude-from-catalog>
+
+  <long-description>
+   The Fokker Dr.I (Dreidecker, "triplane" in German) was a World War I fighter aircraft built by Fokker-Flugzeugwerke. The Dr.I saw widespread service in the spring of 1918. It became famous as the aircraft in which Manfred von Richthofen gained his last 19 victories.
+  </long-description>
+
+  <tags>
+   <tag>ga</tag>
+   <tag>fokker</tag>
+   <tag>dr1</tag>
+   <tag>stol</tag>
+   <tag>piston</tag>
+   <tag>single-engine</tag>
+   <tag>fixed-gear</tag>
+   <tag>tri-plane</tag>
+   <tag>WW-I</tag>
+   <tag>tail-dragger</tag>
+   <tag>military</tag>
+   <tag>110hp</tag>
+  </tags>
+
+  <previews>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/tied-down.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+   <preview>
+    <type>panel</type>
+    <path>Preview/cockpit1.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+   <preview>
+    <type>panel</type>
+    <path>Preview/cockpit2.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+  </previews>
 
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>

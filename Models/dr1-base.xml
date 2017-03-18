@@ -19,6 +19,16 @@
  </nasal>
 
  <model>
+  <name>Pilot</name>
+  <offsets>
+   <x-m>1.0</x-m>
+   <y-m>0.04</y-m>
+   <z-m>-0.57</z-m>
+  </offsets>
+  <path>Aircraft/Generic/Pilot/WWI/pilot.xml</path>
+ </model>
+
+ <model>
   <name>Propulsion</name>
   <path>Aircraft/fkdr1/Models/propulsion.xml</path>
  </model>
@@ -52,6 +62,16 @@
    <z-m>0.149</z-m>
   </offsets>
  </model>
+
+ <animation>
+ <type>select</type>
+ <object-name>Pilot</object-name>
+ <condition>
+  <not>
+   <property>sim/current-view/internal</property>
+  </not>
+ </condition>
+</animation>
 
  <effect>
   <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-reflection</inherits-from>
