@@ -5,13 +5,13 @@
   <model>
    <livery>
     <name type="string">Josef Jacobs</name>
-    <texture>Liveries/Jacobs/dr1.rgb</texture>
+    <texture>Liveries/Jacobs/dr1.png</texture>
    </livery>
    <livery-leather>
-    <texture>Liveries/RedBaron/leather.rgb</texture>
+    <texture>Liveries/Jacobs/leather.png</texture>
    </livery-leather>
    <livery-logo>
-    <texture>Liveries/RedBaron/dr1trans.rgb</texture>
+    <texture>Liveries/Jacobs/dr1trans.png</texture>
    </livery-logo>
   </model>
  </sim>

@@ -5,13 +5,13 @@
   <model>
    <livery>
     <name type="string">Manfred von Richthofen</name>
-    <texture>Liveries/VonRichthofen/dr1.rgb</texture>
+    <texture>Liveries/VonRichthofen/dr1.png</texture>
    </livery>
    <livery-leather>
-    <texture>Liveries/VonRichthofen/leather.rgb</texture>
+    <texture>Liveries/VonRichthofen/leather.png</texture>
    </livery-leather>
    <livery-logo>
-    <texture>Liveries/VonRichthofen/dr1trans.rgb</texture>
+    <texture>Liveries/VonRichthofen/dr1trans.png</texture>
    </livery-logo>
   </model>
  </sim>

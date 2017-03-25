@@ -76,6 +76,7 @@
  <effect>
   <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-reflection</inherits-from>
   <object-name>metal</object-name>
+  <object-name>painted_metal</object-name>
   <object-name>cowling</object-name>
   <object-name>exhaust</object-name>
   <object-name>skid</object-name>
@@ -105,6 +106,7 @@
   <type>material</type>
    <object-name>propeller</object-name>
    <object-name>wood</object-name>
+   <object-name>painted_metal</object-name>
    <object-name>cloth</object-name>
    <object-name>cowling</object-name>
    <property-base>sim/model/livery</property-base>
