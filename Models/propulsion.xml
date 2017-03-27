@@ -63,6 +63,14 @@
   </condition>
  </animation>
 
+ <animation>
+  <type>material</type>
+   <object-name>propeller</object-name>
+   <property-base>sim/model/livery</property-base>
+   <texture-prop>texture</texture-prop>
+   <texture>dr1.rgb</texture>
+ </animation>
+
  <effect>
   <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-cylinders</inherits-from>
   <object-name>cylinders</object-name>

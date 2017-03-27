@@ -108,7 +108,6 @@
 
  <animation>
   <type>material</type>
-   <object-name>propeller</object-name>
    <object-name>wood</object-name>
    <object-name>painted_metal</object-name>
    <object-name>cloth</object-name>
