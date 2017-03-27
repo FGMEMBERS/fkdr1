@@ -19,6 +19,10 @@
  </nasal>
 
  <model>
+  <path>Aircraft/fkdr1/Models/dr1_shadow.xml</path>
+ </model>
+
+ <model>
   <name>Pilot</name>
   <offsets>
    <x-m>1.0</x-m>

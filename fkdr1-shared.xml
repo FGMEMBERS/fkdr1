@@ -93,6 +93,12 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
   </sound>
 
+  <systems>
+   <property-rule n="101">
+    <path>Aircraft/fkdr1/Systems/shadow.xml</path>
+   </property-rule>
+  </systems>
+
   <panel_2>
    <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
    <visibility>true</visibility>
