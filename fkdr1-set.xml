@@ -1,114 +1,84 @@
-<?xml version="1.0"?>
-<!--
-************************************************************************
-Fokker Dr.1 (triplane) simulation config.  This file ties together all
-the components used by FGFS to represent the flight data model,
-instrument panel, and external model.
-
-Flight model details: 
-Aircraft/UIUC/fkdr1-v1-nl/README.fkdr1.html
-
-External model details:  
-- Currently no GNU GPL version exists.
-- To obtain an external model, separately download the file
-  fokdr1m2.zip from http://www.flightsim.com.  There are several
-  variants of this which can also be used, namely these files:
-
-  dr-1cfs.zip
-  dr1mp98.zip
-  dr1mpcfs.zip
-  fkdr1blk.zip
-  fokdr-15.zip
-
-- The read the file Aircraft/UIUC/fkdr1-v1-nl/README.fkdr1.html
-
-Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
-************************************************************************
--->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList include="fkdr1-shared.xml">
+  <sim>
+    <description>Fokker Dr.1 (JSBSim)</description>
+    <author>Michael Selig (FDM) Erik Hofman (FDM) Ron Jensen (FDM), Erik Hofman (3D model)</author>
+    <status>production</status>
+    <rating>
+      <FDM type="int">5</FDM>
+      <systems type="int">3</systems>
+      <cockpit type="int">5</cockpit>
+      <model type="int">5</model>
+    </rating>
+    <flight-model>jsb</flight-model>
+    <aero>dr1</aero>
+    <tags>
+      <tag>fokker</tag>
+      <tag>dr1</tag>
+      <tag>1910s</tag>
+      <tag>ww1</tag>
+      <tag>fighter</tag>
+      <tag>triplane</tag>
+      <tag>tail-dragger</tag>
+      <tag>fixed-gear</tag>
+      <tag>single-engine</tag>
+      <tag>piston</tag>
+      <tag>radial</tag>
+    </tags>
 
- <sim>
-
-  <description>Fokker Dr.1 (JSBSim)</description>
-  <author>Michael Selig (FDM) Erik Hofman (FDM) Ron Jensen (FDM), Erik Hofman (3D model)</author>
-  <status>production</status>
-  <rating>
-    <FDM type="int">5</FDM>
-    <systems type="int">3</systems>
-    <cockpit type="int">5</cockpit>
-    <model type="int">5</model>
-  </rating>
-
-  <flight-model>jsb</flight-model>
-  <aero>dr1</aero>
-
-  <model>
-   <path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
-   <livery>
-    <file type="string"/>
-   </livery>
-   <pushback>
-    <kp type="double">100</kp>
-    <ki type="double">25</ki>
-    <kd type="double">0</kd>
-    <position-norm type="double">0</position-norm>
-   </pushback>
-  </model>
-
- </sim>
-
- <input>
-  <keyboard>
-   <key n="360">
-    <name>PageUp</name>
-    <desc>Increase mixture</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.adjMixture(1)
-     </script>
-    </binding>
-   </key>
-
-   <key n="361">
-    <name>PageDown</name>
-    <desc>Decrease mixture</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>
-       controls.adjMixture(-1)
-     </script>
-    </binding>
-   </key>
-
-   <key n="98">
-    <name>b</name>
-    <desc>Operate blip switch</desc>
-    <binding>
-     <command>nasal</command>
-     <script>
-      setprop("controls/engines/engine/throttle", 0.0);
-      settimer( func {setprop("controls/engines/engine/throttle", 1.0);}, 0.75);
-     </script>
-    </binding>
-   </key>
-    
-  </keyboard>
-
- </input>
-
- <controls>
-   <engines>
-    <engine>
-     <fuel-pump type="bool">false</fuel-pump>
-     <throttle type="double">1.0</throttle>
-     <mixture type="double">0.0</mixture>
-    </engine>
-   </engines>
+    <model>
+      <path>Aircraft/fkdr1/Models/dr1-jsb.xml</path>
+      <livery>
+        <file type="string"></file>
+      </livery>
+      <pushback>
+        <kp type="double">100</kp>
+        <ki type="double">25</ki>
+        <kd type="double">0</kd>
+        <position-norm type="double">0</position-norm>
+      </pushback>
+    </model>
+  </sim>
+  <input>
+    <keyboard>
+      <key n="360">
+        <name>PageUp</name>
+        <desc>Increase mixture</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>nasal</command>
+          <script>controls.adjMixture(1)</script>
+        </binding>
+      </key>
+      <key n="361">
+        <name>PageDown</name>
+        <desc>Decrease mixture</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>nasal</command>
+          <script>controls.adjMixture(-1)</script>
+        </binding>
+      </key>
+      <key n="98">
+        <name>b</name>
+        <desc>Operate blip switch</desc>
+        <binding>
+          <command>nasal</command>
+          <script>setprop("controls/engines/engine/throttle", 0.0);
+      settimer( func {setprop("controls/engines/engine/throttle", 1.0);}, 0.75);</script>
+        </binding>
+      </key>
+    </keyboard>
+  </input>
+  <controls>
+    <engines>
+      <engine>
+        <fuel-pump type="bool">false</fuel-pump>
+        <throttle type="double">1.0</throttle>
+        <mixture type="double">0.0</mixture>
+      </engine>
+    </engines>
   </controls>
-
 
 </PropertyList>
