@@ -29,12 +29,75 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
 <PropertyList>
 
  <sim include="help.xml">
-   <!-- don't make a variant for this file -->
-   <exclude-from-catalog type="bool">true</exclude-from-catalog>
+  <!-- don't make a variant for this file -->
+  <exclude-from-catalog type="bool">true</exclude-from-catalog>
+
+  <long-description>
+   The Fokker Dr.I (Dreidecker, "triplane" in German) was a World War I fighter aircraft built by Fokker-Flugzeugwerke. The Dr.I saw widespread service in the spring of 1918. It became famous as the aircraft in which Manfred von Richthofen gained his last 19 victories.
+  </long-description>
+
+  <tags>
+   <tag>ga</tag>
+   <tag>fokker</tag>
+   <tag>dr1</tag>
+   <tag>stol</tag>
+   <tag>piston</tag>
+   <tag>single-engine</tag>
+   <tag>fixed-gear</tag>
+   <tag>tri-plane</tag>
+   <tag>WW-I</tag>
+   <tag>tail-dragger</tag>
+   <tag>military</tag>
+   <tag>110hp</tag>
+  </tags>
+
+  <previews>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action2.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action3.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/action4.jpg</path>
+    <splash type="bool">true</splash>
+   </preview>
+   <preview>
+    <type>exterior</type>
+    <path>Preview/tied-down.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+   <preview>
+    <type>panel</type>
+    <path>Preview/cockpit1.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+   <preview>
+    <type>panel</type>
+    <path>Preview/cockpit2.jpg</path>
+    <splash type="bool">false</splash>
+   </preview>
+  </previews>
 
   <sound>
    <path>Aircraft/fkdr1/Sounds/fkdr1-sound.xml</path>
   </sound>
+
+  <systems>
+   <property-rule n="101">
+    <path>Aircraft/fkdr1/Systems/shadow.xml</path>
+   </property-rule>
+  </systems>
 
   <panel_2>
    <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
@@ -77,6 +140,41 @@ Last update: Nov 10, 2002 Michael Selig, m-selig@uiuc.edu
     <menu n="100">
      <label>Fokker Dr.1</label>
      <enabled type="bool">true</enabled>
+     <item>
+      <label>Autostart</label>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/fuel-pump</property>
+       <value type="bool">true</value>
+      </binding>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/magnetos</property>
+       <value type="int">3</value>
+      </binding>
+      <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/mixture</property>
+       <value type="float">1.0</value>
+      </binding>
+      <binding>
+       <command>nasal</command>
+       <script>
+        controls.startEngine(1);
+        controls.applyParkingBrake(0);
+      </script>
+      </binding>
+      <binding>
+       <command>nasal</command>
+       <script>
+        var timer = maketimer(20, func(){
+            controls.startEngine(0);
+        });
+        timer.singleShot = 1;
+        timer.start();
+       </script>
+      </binding>
+     </item>
      <item>
       <label>Select Livery</label>
       <binding>

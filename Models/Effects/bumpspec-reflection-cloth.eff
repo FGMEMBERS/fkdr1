@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
-  <name>Aircraft/fkdr1/Models/Effects/cylinder-normal</name>
-  <inherits-from>Effects/bumpspec</inherits-from>
+  <name>Aircraft/fkdr1/Models/Effects/bumpspec-reflection-cloth</name>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/bumpspec-cloth</inherits-from>
   <parameters>
     <texture n="2">
-      <image>Aircraft/fkdr1/Models/cylinder_normals.png</image>
+      <image>Aircraft/fkdr1/Models/normalmap.png</image>
       <filter>linear-mipmap-linear</filter>
       <wrap-s>repeat</wrap-s>
       <wrap-t>repeat</wrap-t>

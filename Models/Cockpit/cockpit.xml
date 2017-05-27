@@ -4,6 +4,11 @@
 
  <path>cockpit.ac</path>
 
+ <effect>
+  <inherits-from>Aircraft/fkdr1/Models/Effects/reflection</inherits-from>
+  <object-name>metal</object-name>
+ </effect>
+
  <model>
   <name>magnetos</name>
   <path>Aircraft/fkdr1/Models/Cockpit/entzundung.xml</path>

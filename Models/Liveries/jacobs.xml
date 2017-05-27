@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+ 
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Josef Jacobs</name>
+    <texture>Liveries/Jacobs/dr1.png</texture>
+   </livery>
+   <livery-leather>
+    <texture>Liveries/Jacobs/leather.png</texture>
+   </livery-leather>
+   <livery-logo>
+    <texture>Liveries/Jacobs/dr1trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
